@@ -1,10 +1,10 @@
-# vue-template
+# reversi-vue
 
 > [Vue CLI]-scaffolded project with Continuous Integration, and Continuous Delivery.
 
-[![Greenkeeper](https://badges.greenkeeper.io/amercier/vue-template.svg)](https://github.com/amercier/vue-template/issues?q=label%3Agreenkeeper)
-[![Dependency Status](https://img.shields.io/david/amercier/vue-template.svg)](https://david-dm.org/amercier/vue-template)
-[![devDependency Status](https://img.shields.io/david/dev/amercier/vue-template.svg)](https://david-dm.org/amercier/vue-template#info=devDependencies)
+[![Greenkeeper](https://badges.greenkeeper.io/amercier/reversi-vue.svg)](https://github.com/amercier/reversi-vue/issues?q=label%3Agreenkeeper)
+[![Dependency Status](https://img.shields.io/david/amercier/reversi-vue.svg)](https://david-dm.org/amercier/reversi-vue)
+[![devDependency Status](https://img.shields.io/david/dev/amercier/reversi-vue.svg)](https://david-dm.org/amercier/reversi-vue#info=devDependencies)
 
 ## Vue CLI Settings
 
@@ -36,8 +36,8 @@
 
 ## Continuous Integration
 
-[![Build Status](https://travis-ci.org/amercier/vue-template.svg?branch=master)](https://travis-ci.org/amercier/vue-template)
-[![Test Coverage](https://img.shields.io/codecov/c/github/amercier/vue-template/master.svg)](https://codecov.io/github/amercier/vue-template?branch=master)
+[![Build Status](https://travis-ci.org/amercier/reversi-vue.svg?branch=master)](https://travis-ci.org/amercier/reversi-vue)
+[![Test Coverage](https://img.shields.io/codecov/c/github/amercier/reversi-vue/master.svg)](https://codecov.io/github/amercier/reversi-vue?branch=master)
 
 Each commit is automatically tested on [Travis CI], which runs:
 
@@ -47,7 +47,7 @@ Each commit is automatically tested on [Travis CI], which runs:
 
 ## Continuous Delivery
 
-[![Go to demo](https://img.shields.io/website-up-down-green-red/https/vue-template.amercier.com.svg?label=website)](https://vue-template.amercier.com/)
+[![Go to demo](https://img.shields.io/website-up-down-green-red/https/reversi.amercier.com.svg?label=website)](https://reversi.amercier.com/)
 
 Each successful build on the `master` branch is automatically deployed by Travis CI on
 [GitHub Pages]. See [GitHub Pages Deployment] for more information.
@@ -60,7 +60,7 @@ See [Contributing Guide](CONTRIBUTING.md).
 
 ## License
 
-[![License](https://img.shields.io/github/license/amercier/vue-template.svg)](LICENSE.md)
+[![License](https://img.shields.io/github/license/amercier/reversi-vue.svg)](LICENSE.md)
 
 [vue cli]: https://cli.vuejs.org/
 [travis ci]: https://travis-ci.org
@@ -71,6 +71,6 @@ See [Contributing Guide](CONTRIBUTING.md).
 [cypress]: https://www.cypress.io/
 [github pages]: https://pages.github.com/
 [github pages deployment]: https://docs.travis-ci.com/user/deployment/pages/
-[23e6372]: https://github.com/amercier/vue-template/commit/23e6372
-[c7a81dd]: https://github.com/amercier/vue-template/commit/c7a81dd
-[473dbc0]: https://github.com/amercier/vue-template/commit/473dbc0
+[23e6372]: https://github.com/amercier/reversi-vue/commit/23e6372
+[c7a81dd]: https://github.com/amercier/reversi-vue/commit/c7a81dd
+[473dbc0]: https://github.com/amercier/reversi-vue/commit/473dbc0

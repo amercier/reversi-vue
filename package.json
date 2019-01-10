@@ -1,5 +1,5 @@
 {
-  "name": "vue-template",
+  "name": "reversi-vue",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",

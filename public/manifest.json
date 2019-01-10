@@ -1,6 +1,6 @@
 {
-  "name": "vue-template",
-  "short_name": "vue-template",
+  "name": "Reversi",
+  "short_name": "Reversi",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",

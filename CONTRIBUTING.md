@@ -63,9 +63,9 @@ Spawns a development server and runs [Cypress] end-to-end test suite in developm
 [vue cli]: https://cli.vuejs.org/
 [vuex]: https://vuex.vuejs.org/
 [vue-router]: https://router.vuejs.org/
-[♥ open an issue]: https://github.com/amercier/vue-template/issues/new
-[♥♥♥ propose a pull request]: https://github.com/amercier/vue-template/pulls
-[existing issues]: https://github.com/amercier/vue-template/issues?q=is%3Aissue
+[♥ open an issue]: https://github.com/amercier/reversi-vue/issues/new
+[♥♥♥ propose a pull request]: https://github.com/amercier/reversi-vue/pulls
+[existing issues]: https://github.com/amercier/reversi-vue/issues?q=is%3Aissue
 [airbnb]: https://github.com/airbnb/javascript
 [prettier]: https://prettier.io/
 [@vue/eslint-config-airbnb]: https://www.npmjs.com/package/@vue/eslint-config-airbnb
