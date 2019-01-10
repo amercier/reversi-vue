@@ -1,6 +1,6 @@
 # reversi-vue
 
-> [Vue CLI]-scaffolded project with Continuous Integration, and Continuous Delivery.
+> [Reversi] board game implemented with [Vue.js] and [Vuex] (using [Vue CLI]).
 
 [![Greenkeeper](https://badges.greenkeeper.io/amercier/reversi-vue.svg)](https://github.com/amercier/reversi-vue/issues?q=label%3Agreenkeeper)
 [![Dependency Status](https://img.shields.io/david/amercier/reversi-vue.svg)](https://david-dm.org/amercier/reversi-vue)
@@ -62,7 +62,10 @@ See [Contributing Guide](CONTRIBUTING.md).
 
 [![License](https://img.shields.io/github/license/amercier/reversi-vue.svg)](LICENSE.md)
 
+[reversi]: https://en.wikipedia.org/wiki/Reversi
+[vue.js]: https://vuejs.org/
 [vue cli]: https://cli.vuejs.org/
+[vuex]: https://vuex.vuejs.org/
 [travis ci]: https://travis-ci.org
 [prettier]: https://prettier.io/
 [eslint]: https://eslint.org/
