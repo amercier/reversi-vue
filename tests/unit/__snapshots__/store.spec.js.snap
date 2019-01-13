@@ -1,0 +1,1264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createStore getters cells represents the cell squares 1`] = `
+Array [
+  Object {
+    "col": 0,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 0,
+  },
+  Object {
+    "col": 1,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 0,
+  },
+  Object {
+    "col": 2,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 0,
+  },
+  Object {
+    "col": 3,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 0,
+  },
+  Object {
+    "col": 4,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 0,
+  },
+  Object {
+    "col": 5,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 0,
+  },
+  Object {
+    "col": 6,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 0,
+  },
+  Object {
+    "col": 7,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 0,
+  },
+  Object {
+    "col": 0,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 1,
+  },
+  Object {
+    "col": 1,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 1,
+  },
+  Object {
+    "col": 2,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 1,
+  },
+  Object {
+    "col": 3,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 1,
+  },
+  Object {
+    "col": 4,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 1,
+  },
+  Object {
+    "col": 5,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 1,
+  },
+  Object {
+    "col": 6,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 1,
+  },
+  Object {
+    "col": 7,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 1,
+  },
+  Object {
+    "col": 0,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 2,
+  },
+  Object {
+    "col": 1,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 2,
+  },
+  Object {
+    "col": 2,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 2,
+  },
+  Object {
+    "col": 3,
+    "color": "black",
+    "isMove": true,
+    "isStone": false,
+    "row": 2,
+  },
+  Object {
+    "col": 4,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 2,
+  },
+  Object {
+    "col": 5,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 2,
+  },
+  Object {
+    "col": 6,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 2,
+  },
+  Object {
+    "col": 7,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 2,
+  },
+  Object {
+    "col": 0,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 3,
+  },
+  Object {
+    "col": 1,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 3,
+  },
+  Object {
+    "col": 2,
+    "color": "black",
+    "isMove": true,
+    "isStone": false,
+    "row": 3,
+  },
+  Object {
+    "col": 3,
+    "color": "white",
+    "isMove": false,
+    "isStone": true,
+    "row": 3,
+  },
+  Object {
+    "col": 4,
+    "color": "black",
+    "isMove": false,
+    "isStone": true,
+    "row": 3,
+  },
+  Object {
+    "col": 5,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 3,
+  },
+  Object {
+    "col": 6,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 3,
+  },
+  Object {
+    "col": 7,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 3,
+  },
+  Object {
+    "col": 0,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 4,
+  },
+  Object {
+    "col": 1,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 4,
+  },
+  Object {
+    "col": 2,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 4,
+  },
+  Object {
+    "col": 3,
+    "color": "black",
+    "isMove": false,
+    "isStone": true,
+    "row": 4,
+  },
+  Object {
+    "col": 4,
+    "color": "white",
+    "isMove": false,
+    "isStone": true,
+    "row": 4,
+  },
+  Object {
+    "col": 5,
+    "color": "black",
+    "isMove": true,
+    "isStone": false,
+    "row": 4,
+  },
+  Object {
+    "col": 6,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 4,
+  },
+  Object {
+    "col": 7,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 4,
+  },
+  Object {
+    "col": 0,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 5,
+  },
+  Object {
+    "col": 1,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 5,
+  },
+  Object {
+    "col": 2,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 5,
+  },
+  Object {
+    "col": 3,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 5,
+  },
+  Object {
+    "col": 4,
+    "color": "black",
+    "isMove": true,
+    "isStone": false,
+    "row": 5,
+  },
+  Object {
+    "col": 5,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 5,
+  },
+  Object {
+    "col": 6,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 5,
+  },
+  Object {
+    "col": 7,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 5,
+  },
+  Object {
+    "col": 0,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 6,
+  },
+  Object {
+    "col": 1,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 6,
+  },
+  Object {
+    "col": 2,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 6,
+  },
+  Object {
+    "col": 3,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 6,
+  },
+  Object {
+    "col": 4,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 6,
+  },
+  Object {
+    "col": 5,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 6,
+  },
+  Object {
+    "col": 6,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 6,
+  },
+  Object {
+    "col": 7,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 6,
+  },
+  Object {
+    "col": 0,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 7,
+  },
+  Object {
+    "col": 1,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 7,
+  },
+  Object {
+    "col": 2,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 7,
+  },
+  Object {
+    "col": 3,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 7,
+  },
+  Object {
+    "col": 4,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 7,
+  },
+  Object {
+    "col": 5,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 7,
+  },
+  Object {
+    "col": 6,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 7,
+  },
+  Object {
+    "col": 7,
+    "color": "blank",
+    "isMove": false,
+    "isStone": false,
+    "row": 7,
+  },
+]
+`;
+
+exports[`createStore getters mutations updates the game state 1`] = `
+Game {
+  "_board": Board {
+    "_squares": Array [
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+      ],
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+      ],
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 2,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 2,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "BLANK",
+          "_rowIndex": 2,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "BLACK",
+          "_rowIndex": 2,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "BLANK",
+          "_rowIndex": 2,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 2,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 2,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 2,
+        },
+      ],
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 3,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 3,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "BLANK",
+          "_rowIndex": 3,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "BLACK",
+          "_rowIndex": 3,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "BLACK",
+          "_rowIndex": 3,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 3,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 3,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 3,
+        },
+      ],
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 4,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 4,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "BLANK",
+          "_rowIndex": 4,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "BLACK",
+          "_rowIndex": 4,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "WHITE",
+          "_rowIndex": 4,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 4,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 4,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 4,
+        },
+      ],
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+      ],
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+      ],
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+      ],
+    ],
+  },
+  "_isEnded": false,
+  "_lastReport": Object {
+    "colIndex": 3,
+    "isNextActorPassed": false,
+    "isSuccess": true,
+    "pieceType": "BLACK",
+    "rivalPieceType": "WHITE",
+    "rowIndex": 2,
+  },
+  "_nextPieceType": "WHITE",
+}
+`;
+
+exports[`createStore getters mutations updates the game state 2`] = `
+Game {
+  "_board": Board {
+    "_squares": Array [
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 0,
+        },
+      ],
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 1,
+        },
+      ],
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 2,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 2,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "WHITE",
+          "_rowIndex": 2,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "BLACK",
+          "_rowIndex": 2,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "BLANK",
+          "_rowIndex": 2,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 2,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 2,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 2,
+        },
+      ],
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 3,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 3,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "BLANK",
+          "_rowIndex": 3,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "WHITE",
+          "_rowIndex": 3,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "BLACK",
+          "_rowIndex": 3,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 3,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 3,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 3,
+        },
+      ],
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 4,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 4,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "BLANK",
+          "_rowIndex": 4,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "BLACK",
+          "_rowIndex": 4,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "WHITE",
+          "_rowIndex": 4,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 4,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 4,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 4,
+        },
+      ],
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 5,
+        },
+      ],
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 6,
+        },
+      ],
+      Array [
+        Square {
+          "_colIndex": 0,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+        Square {
+          "_colIndex": 1,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+        Square {
+          "_colIndex": 2,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+        Square {
+          "_colIndex": 3,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+        Square {
+          "_colIndex": 4,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+        Square {
+          "_colIndex": 5,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+        Square {
+          "_colIndex": 6,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+        Square {
+          "_colIndex": 7,
+          "_pieceType": "BLANK",
+          "_rowIndex": 7,
+        },
+      ],
+    ],
+  },
+  "_isEnded": false,
+  "_lastReport": Object {
+    "colIndex": 2,
+    "isNextActorPassed": false,
+    "isSuccess": true,
+    "pieceType": "WHITE",
+    "rivalPieceType": "BLACK",
+    "rowIndex": 2,
+  },
+  "_nextPieceType": "BLACK",
+}
+`;
+
+exports[`getSquareToCell which returns expected empty cells 1`] = `
+Object {
+  "col": 0,
+  "color": "blank",
+  "isMove": false,
+  "isStone": false,
+  "row": 0,
+}
+`;
+
+exports[`getSquareToCell which returns expected empty cells 2`] = `
+Object {
+  "col": 7,
+  "color": "blank",
+  "isMove": false,
+  "isStone": false,
+  "row": 7,
+}
+`;
+
+exports[`getSquareToCell which returns expected moves 1`] = `
+Object {
+  "col": 3,
+  "color": "black",
+  "isMove": true,
+  "isStone": false,
+  "row": 2,
+}
+`;
+
+exports[`getSquareToCell which returns expected moves 2`] = `
+Object {
+  "col": 2,
+  "color": "black",
+  "isMove": true,
+  "isStone": false,
+  "row": 3,
+}
+`;
+
+exports[`getSquareToCell which returns expected moves 3`] = `
+Object {
+  "col": 5,
+  "color": "black",
+  "isMove": true,
+  "isStone": false,
+  "row": 4,
+}
+`;
+
+exports[`getSquareToCell which returns expected moves 4`] = `
+Object {
+  "col": 4,
+  "color": "black",
+  "isMove": true,
+  "isStone": false,
+  "row": 5,
+}
+`;
+
+exports[`getSquareToCell which returns expected stones 1`] = `
+Object {
+  "col": 3,
+  "color": "white",
+  "isMove": false,
+  "isStone": true,
+  "row": 3,
+}
+`;
+
+exports[`getSquareToCell which returns expected stones 2`] = `
+Object {
+  "col": 4,
+  "color": "black",
+  "isMove": false,
+  "isStone": true,
+  "row": 3,
+}
+`;
+
+exports[`getSquareToCell which returns expected stones 3`] = `
+Object {
+  "col": 3,
+  "color": "black",
+  "isMove": false,
+  "isStone": true,
+  "row": 4,
+}
+`;
+
+exports[`getSquareToCell which returns expected stones 4`] = `
+Object {
+  "col": 4,
+  "color": "white",
+  "isMove": false,
+  "isStone": true,
+  "row": 4,
+}
+`;
