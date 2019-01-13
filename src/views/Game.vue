@@ -93,9 +93,12 @@ $container-padding: 1.5em;
 }
 
 // Portait mode
-@media screen and (max-width: 1200px) and (orientation: portrait) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+  $player-width: 2.5em;
+
   .game {
     flex-direction: column;
+    padding: $container-padding / 2;
 
     &-player {
       width: 100%;
@@ -104,16 +107,25 @@ $container-padding: 1.5em;
 
     &-content {
       // All horizontal space, minus container padding
-      width: calc(100vw - #{2 * $container-padding});
-      height: calc(100vw - #{2 * $container-padding});
+      width: calc(100vw - #{$container-padding});
+      height: calc(100vw - #{$container-padding});
 
       // All vertical space, minus header and container padding
       $available-height: calc(
-        100vh - #{$HEADER_HEIGHT} - #{2 * $player-width} - #{2 *
-          $container-padding}
+        100vh - #{$HEADER_HEIGHT} - #{2 * $player-width} - #{$container-padding}
       );
       max-width: $available-height;
       max-height: $available-height;
+    }
+
+    &-player {
+      &--white {
+        margin-top: 0;
+      }
+
+      &--black {
+        margin-bottom: 0;
+      }
     }
   }
 }

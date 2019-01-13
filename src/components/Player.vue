@@ -6,6 +6,7 @@
       Your turn
     </div>
     <div v-if="status === 'won'" class="player-status">You win!</div>
+    <div v-if="status === 'idle'" class="player-status"></div>
   </div>
 </template>
 
@@ -105,14 +106,29 @@ export default {
 
 // Portait mode
 @media screen and (max-width: 1200px) and (orientation: portrait) {
+  $status-width: 5em;
+
   .player {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 2em; // Room for status
+    padding-bottom: 0;
 
     &-stone {
-      margin: 0 2em 0 0;
+      width: 2.5em;
+      height: 2.5em;
+      margin: 0;
+    }
+
+    &-score {
+      margin: 0 1em;
+    }
+
+    &-status {
+      position: static;
+      width: $status-width;
+      // Shift weverything to the right a bit
+      margin-right: (-0.6 * $status-width);
     }
   }
 }
