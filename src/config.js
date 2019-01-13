@@ -17,4 +17,9 @@ module.exports = {
    * @type {String}
    */
   HEADER_HEIGHT: '2.5em',
+
+  /**
+   * Color property values
+   */
+  COLORS: ['white', 'black'],
 };
