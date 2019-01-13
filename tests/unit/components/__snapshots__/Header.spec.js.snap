@@ -2,6 +2,6 @@
 
 exports[`Header.vue when links are passed renders its components 1`] = `
 <header class="header">
-  <nav-stub links="/,Home,/about,About"></nav-stub>
+  <nav-stub links="/,New Game,/about,About"></nav-stub>
 </header>
 `;
