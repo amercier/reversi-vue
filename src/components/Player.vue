@@ -102,4 +102,18 @@ export default {
     }
   }
 }
+
+// Portait mode
+@media screen and (max-width: 1200px) and (orientation: portrait) {
+  .player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2em; // Room for status
+
+    &-stone {
+      margin: 0 2em 0 0;
+    }
+  }
+}
 </style>
