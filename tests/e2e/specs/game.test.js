@@ -3,6 +3,6 @@
 describe('Game page', () => {
   it('Open the game page', () => {
     cy.visit('/');
-    cy.contains('div', 'Board');
+    cy.contains('.game-player--black', 'Your turn');
   });
 });
