@@ -24,7 +24,10 @@ export default {
      *
      * @type {String[][]}
      */
-    links: Array,
+    links: {
+      type: Array,
+      required: true,
+    },
   },
 };
 </script>

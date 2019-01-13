@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Nav.vue when links are passed renders its components 1`] = `
+exports[`Nav.vue renders its components 1`] = `
 <nav class="nav">
   <ul class="nav-list">
     <li class="nav-item">
