@@ -131,7 +131,9 @@ $cell-border-thickness: 0.1em;
     background: $grid-color url(../assets/wooden-board.jpg) repeat 0 0;
     background-attachment: fixed;
     background-blend-mode: multiply;
-    overflow: hidden; // Hide edge borders
+    background-clip: padding-box;
+    overflow: hidden; // Hide cells edge borders
+    border: ($cell-border-thickness) solid rgba(0, 0, 0, 0.3);
   }
 
   &-cell {
