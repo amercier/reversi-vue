@@ -3,102 +3,22 @@
 exports[`Board.vue renders the board 1`] = `
 <div class="board">
   <div class="board-grid">
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell">
-      <move-stub color="black" onclick="function () {}" class="board-move"></move-stub>
-    </div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell">
-      <stone-stub color="black" class="board-stone"></stone-stub>
-    </div>
-    <div class="board-cell board-cell--alternate">
+    <div class="board-cell ">
       <stone-stub color="white" class="board-stone"></stone-stub>
-    </div>
-    <div class="board-cell">
-      <stone-stub color="black" class="board-stone"></stone-stub>
-    </div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate">
-      <stone-stub color="black" class="board-stone"></stone-stub>
-    </div>
-    <div class="board-cell">
-      <stone-stub color="white" class="board-stone"></stone-stub>
-    </div>
-    <div class="board-cell board-cell--alternate">
-      <stone-stub color="white" class="board-stone"></stone-stub>
-    </div>
-    <div class="board-cell">
-      <stone-stub color="white" class="board-stone"></stone-stub>
-    </div>
-    <div class="board-cell board-cell--alternate">
-      <move-stub color="black" onclick="function () {}" class="board-move"></move-stub>
-    </div>
-    <div class="board-cell"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell">
-      <stone-stub color="black" class="board-stone"></stone-stub>
-    </div>
-    <div class="board-cell board-cell--alternate">
-      <stone-stub color="white" class="board-stone"></stone-stub>
-    </div>
-    <div class="board-cell">
-      <stone-stub color="black" class="board-stone"></stone-stub>
-    </div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell">
-      <stone-stub color="white" class="board-stone"></stone-stub>
+      <!---->
     </div>
     <div class="board-cell board-cell--alternate">
       <stone-stub color="black" class="board-stone"></stone-stub>
+      <!---->
     </div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell">
-      <move-stub color="black" onclick="function () {}" class="board-move"></move-stub>
+    <div class="board-cell board-cell--alternate">
+      <!---->
+      <move-stub color="black" onclick="function () { return _vm.onMove(row, col); }" class="board-move"></move-stub>
     </div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell">
-      <move-stub color="black" onclick="function () {}" class="board-move"></move-stub>
+    <div class="board-cell ">
+      <!---->
+      <!---->
     </div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
-    <div class="board-cell board-cell--alternate"></div>
-    <div class="board-cell"></div>
   </div>
 </div>
 `;
