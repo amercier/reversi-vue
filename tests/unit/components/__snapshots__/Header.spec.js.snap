@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header.vue when links are passed renders its components 1`] = `
+<header class="header">
+  <nav-stub links="/,Home,/about,About"></nav-stub>
+</header>
+`;

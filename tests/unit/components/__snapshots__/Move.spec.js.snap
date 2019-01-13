@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Move.vue renders a black move 1`] = `<a href="#" class="move move--black"></a>`;
+
+exports[`Move.vue renders a white move 1`] = `<a href="#" class="move move--white"></a>`;

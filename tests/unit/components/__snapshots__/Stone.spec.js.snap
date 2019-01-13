@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stone.vue renders a black stone 1`] = `<div class="stone stone--black"></div>`;
+
+exports[`Stone.vue renders a white stone 1`] = `<div class="stone stone--white"></div>`;

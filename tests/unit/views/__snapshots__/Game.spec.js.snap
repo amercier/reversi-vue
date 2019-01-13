@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Game.vue renders its components 1`] = `
+<main class="game">
+  <player-stub color="white" score="5" status="idle" class="game-player game-player--white"></player-stub>
+  <player-stub color="black" score="3" status="play" class="game-player game-player--black"></player-stub>
+  <div class="game-content">
+    <board-stub class="game-board"></board-stub>
+  </div>
+</main>
+`;
