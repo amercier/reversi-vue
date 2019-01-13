@@ -1,6 +1,12 @@
 <template>
   <header class="header">
-    <Nav :links="[['/', 'Game'], ['/about', 'About']]" />
+    <Nav
+      :links="[
+        ['/', 'Game'],
+        [handleRestart, 'Restart', $store.getters.isAtStart],
+        ['/about', 'About'],
+      ]"
+    />
   </header>
 </template>
 
@@ -11,6 +17,20 @@ export default {
   name: 'Header',
   components: {
     Nav,
+  },
+  methods: {
+    /**
+     * Function called whenever the user press Restart.
+     */
+    handleRestart() {
+      if (
+        confirm(
+          'Do you really want to restart?\nYour current game will be lost...',
+        )
+      ) {
+        this.$store.commit('restart');
+      }
+    },
   },
 };
 </script>

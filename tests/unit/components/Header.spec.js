@@ -1,14 +1,25 @@
-import { shallowMount } from '@vue/test-utils';
+import Vuex from 'vuex';
+import { shallowMount, createLocalVue } from '@vue/test-utils';
+import { createStore } from '@/store';
 import Header from '@/components/Header.vue';
 
+const localVue = createLocalVue();
+localVue.use(Vuex);
+
 describe('Header.vue', () => {
+  let store;
+
+  beforeEach(() => {
+    store = createStore(); // TODO Mock
+  });
+
   it('renders without crashing', () => {
-    shallowMount(Header);
+    shallowMount(Header, { store, localVue });
   });
 
   describe('when links are passed', () => {
     it('renders its components', () => {
-      const nav = shallowMount(Header);
+      const nav = shallowMount(Header, { store, localVue });
       expect(nav.html()).toMatchSnapshot();
     });
   });

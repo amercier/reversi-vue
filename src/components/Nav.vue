@@ -3,10 +3,22 @@
     <ul class="nav-list">
       <li
         class="nav-item"
-        v-for="[href, label] in links"
-        :key="`${href}-${label}`"
+        v-for="[location, label, disabled] in links"
+        :key="`${label}`"
       >
-        <router-link class="nav-link" :to="href">{{ label }}</router-link>
+        <router-link
+          :class="`nav-link ${disabled ? 'nav-link--disabled' : ''}`"
+          v-if="typeof location === 'string'"
+          :to="location"
+          >{{ label }}</router-link
+        >
+        <a
+          :class="`nav-link ${disabled ? 'nav-link--disabled' : ''}`"
+          href="#"
+          v-if="typeof location === 'function'"
+          v-on:click.prevent="disabled || location()"
+          >{{ label }}</a
+        >
       </li>
     </ul>
   </nav>
@@ -56,15 +68,23 @@ export default {
   &-link {
     padding: 0.5em 1em;
     white-space: nowrap;
+    transition: opacity 150ms;
 
     &.router-link-exact-active {
       font-weight: bold;
       cursor: default;
     }
 
-    &:not(.router-link-exact-active):hover,
-    &:not(.router-link-exact-active):focus {
-      text-decoration: underline;
+    &:not(.router-link-exact-active):not(&--disabled) {
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    &--disabled {
+      opacity: 0.5;
+      cursor: default;
     }
   }
 }

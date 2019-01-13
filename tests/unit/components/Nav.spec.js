@@ -3,7 +3,7 @@ import Nav from '@/components/Nav.vue';
 
 describe('Nav.vue', () => {
   const propsData = {
-    links: [['/a', 'Link 1'], ['/b', 'Link 2'], ['/c', 'Link 3']],
+    links: [['/a', 'Link 1'], ['/b', 'Link 2'], [() => {}, 'Link 3']],
   };
 
   it('renders without crashing', () => {

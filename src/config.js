@@ -7,6 +7,8 @@ module.exports = {
   /**
    * Number of cells per board row and column.
    *
+   * TODO Updated the game store to handle custom sizes.
+   *
    * @type {Number}
    */
   BOARD_SIZE: 8,

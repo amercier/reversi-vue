@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import { Game, PIECE_TYPES } from 'reversi';
+import { BOARD_SIZE } from './config';
 
 Vue.use(Vuex);
 
@@ -144,6 +145,13 @@ export const createStore = () =>
           black: nextIsWhite ? 'idle' : 'play',
         };
       },
+
+      isAtStart({ game }) {
+        return (
+          game.board.countByPieceType()[PIECE_TYPES.BLANK] ===
+          BOARD_SIZE * BOARD_SIZE - 4
+        );
+      },
     },
 
     /**
@@ -168,6 +176,16 @@ export const createStore = () =>
           rivalPieceType,
         } = state.game.proceed(row, col);
         state.nextPieceType = isNextActorPassed ? pieceType : rivalPieceType;
+      },
+
+      /**
+       * Restart the game.
+       *
+       * @returns {void} Nothing.
+       */
+      restart(state) {
+        state.game = new Game();
+        state.nextPieceType = PIECE_TYPES.BLACK;
       },
     },
   });
