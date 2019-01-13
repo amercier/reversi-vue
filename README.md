@@ -1,42 +1,36 @@
-# reversi-vue
+# Reversi
 
-> [Reversi] board game implemented with [Vue.js] and [Vuex] (using [Vue CLI]).
+> [Reversi] board game implemented with [Vue.js 2] and [Vuex] (using [Vue CLI 3]).
 
+[![Reversi](media/screenshots.png)](https://reversi.amercier.com/)
+
+[![Build Status](https://travis-ci.org/amercier/reversi-vue.svg?branch=master)](https://travis-ci.org/amercier/reversi-vue)
+[![Go to demo](https://img.shields.io/website-up-down-green-red/https/reversi.amercier.com.svg?label=website)](https://reversi.amercier.com/)
 [![Greenkeeper](https://badges.greenkeeper.io/amercier/reversi-vue.svg)](https://github.com/amercier/reversi-vue/issues?q=label%3Agreenkeeper)
 [![Dependency Status](https://img.shields.io/david/amercier/reversi-vue.svg)](https://david-dm.org/amercier/reversi-vue)
 [![devDependency Status](https://img.shields.io/david/dev/amercier/reversi-vue.svg)](https://david-dm.org/amercier/reversi-vue#info=devDependencies)
 
-## Vue CLI Settings
+## Getting started
 
-- **Features**
-  - [x] Babel
-  - [ ] TypeScript
-  - [x] Progressive Web App (PWA) Support
-  - [x] Router
-  - [x] Vuex
-  - [x] CSS Pre-processor
-  - [x] Linter / Formatter
-  - [x] Unit Testing
-  - [x] E2E Testing
-- **Linter / formatter config**
-  - [x] ESLint + Prettier\*
-- **Additional lint features**
-  - [x] Lint on save\*
-  - [ ] Lint and fix on commit
-- **Place for configs?**
-  - [x] In `package.json`
+### 1. Install dependencies
 
-\*: See additional features below
+> **Prerequisites:** you need to have, [NodeJS] and [npm] installed.
 
-## Additional feature
+```bash
+yarn
+```
 
-- **Prettier + Airbnb** are both enabled (see [23e6372]).
-- **Prettier enabled for more files**: HTML, JSON, CSS/SCSS, Markdown, YAML (see [c7a81dd]).
-- **Pre-commit hook**: linting and unit-testing committed files on commit (see [473dbc0]).
+Installs this project dependencies in the `node_modules/` directory.
+
+### 2. Start a development server
+
+```bash
+yarn serve
+```
+
+Spawns a development server on <http://localhost:8080/>. See [Contributing Guide](CONTRIBUTING.md) for more details.
 
 ## Continuous Integration
-
-[![Build Status](https://travis-ci.org/amercier/reversi-vue.svg?branch=master)](https://travis-ci.org/amercier/reversi-vue)
 
 Each commit is automatically tested on [Travis CI], which runs:
 
@@ -46,33 +40,35 @@ Each commit is automatically tested on [Travis CI], which runs:
 
 ## Continuous Delivery
 
-[![Go to demo](https://img.shields.io/website-up-down-green-red/https/reversi.amercier.com.svg?label=website)](https://reversi.amercier.com/)
-
 Each successful build on the `master` branch is automatically deployed by Travis CI on
 [GitHub Pages]. See [GitHub Pages Deployment] for more information.
 
 > **Note:** `GITHUB_TOKEN` and `CNAME` environment variables must be set in Travis CI project.
 
-## Developers
-
-See [Contributing Guide](CONTRIBUTING.md).
-
 ## License
 
 [![License](https://img.shields.io/github/license/amercier/reversi-vue.svg)](LICENSE.md)
 
+## Credits
+
+- Seamless wood textures by [SiberiaCrab] and [PNG Tree].
+- [reversi](https://www.npmjs.com/package/reversi) by [Koujirou Ishii].
+
+Thank you so much for your hard work!
+
 [reversi]: https://en.wikipedia.org/wiki/Reversi
-[vue.js]: https://vuejs.org/
-[vue cli]: https://cli.vuejs.org/
+[vue.js 2]: https://vuejs.org/
+[vue cli 3]: https://cli.vuejs.org/
 [vuex]: https://vuex.vuejs.org/
-[travis ci]: https://travis-ci.org
-[prettier]: https://prettier.io/
-[eslint]: https://eslint.org/
+[nodejs]: https://nodejs.org/
+[npm]: https://www.npmjs.com/
 [jest]: http://jestjs.io/
-[codecov]: https://codecov.io/
 [cypress]: https://www.cypress.io/
+[eslint]: https://eslint.org/
+[prettier]: https://prettier.io/
 [github pages]: https://pages.github.com/
 [github pages deployment]: https://docs.travis-ci.com/user/deployment/pages/
-[23e6372]: https://github.com/amercier/reversi-vue/commit/23e6372
-[c7a81dd]: https://github.com/amercier/reversi-vue/commit/c7a81dd
-[473dbc0]: https://github.com/amercier/reversi-vue/commit/473dbc0
+[travis ci]: https://travis-ci.org
+[siberiacrab]: https://www.deviantart.com/siberiancrab
+[png tree]: https://fr.pngtree.com/
+[koujirou ishii]: http://kjirou.net/
