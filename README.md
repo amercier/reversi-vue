@@ -37,12 +37,11 @@
 ## Continuous Integration
 
 [![Build Status](https://travis-ci.org/amercier/reversi-vue.svg?branch=master)](https://travis-ci.org/amercier/reversi-vue)
-[![Test Coverage](https://img.shields.io/codecov/c/github/amercier/reversi-vue/master.svg)](https://codecov.io/github/amercier/reversi-vue?branch=master)
 
 Each commit is automatically tested on [Travis CI], which runs:
 
 - **Linting** using [ESLint] and [Prettier],
-- **Unit tests** using [Jest] with code coverage reported to [Codecov],
+- **Unit tests** using [Jest],
 - **End-to-end tests** using [Cypress].
 
 ## Continuous Delivery
