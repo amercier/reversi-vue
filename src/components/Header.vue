@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <Nav :links="[['/', 'New Game'], ['/about', 'About']]" />
+    <Nav :links="[['/', 'Game'], ['/about', 'About']]" />
   </header>
 </template>
 
