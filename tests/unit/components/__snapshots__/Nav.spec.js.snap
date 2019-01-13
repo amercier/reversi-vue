@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav.vue when links are passed renders its components 1`] = `
+<nav class="nav">
+  <ul class="nav-list">
+    <li class="nav-item">
+      <router-link-stub to="/a" class="nav-link">Link 1</router-link-stub>
+    </li>
+    <li class="nav-item">
+      <router-link-stub to="/b" class="nav-link">Link 2</router-link-stub>
+    </li>
+    <li class="nav-item">
+      <router-link-stub to="/c" class="nav-link">Link 3</router-link-stub>
+    </li>
+  </ul>
+</nav>
+`;
