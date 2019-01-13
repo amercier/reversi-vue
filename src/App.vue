@@ -19,13 +19,18 @@ export default {
 </script>
 
 <style lang="scss">
+// Gradient under black player status to improve contrast
+$light-gradient-colors: rgba(220, 180, 50, 0.1), rgba(220, 180, 50, 0);
+
+$background-texture: url(./assets/wooden-planks.jpg) repeat top left;
+
 body {
   background: radial-gradient(
-      circle at top right,
-      rgba(220, 180, 50, 0.15) 0,
-      rgba(220, 180, 50, 0) 100%
+      circle at center right,
+      nth($light-gradient-colors, 1) 0,
+      nth($light-gradient-colors, 2) 100%
     ),
-    url(./assets/wooden-planks.jpg) repeat top left;
+    $background-texture;
   color: white;
   font-family: 'Roboto Slab', serif;
   font-size: calc(8px + 1.2vmin);
@@ -46,6 +51,18 @@ a {
     flex-grow: 1;
     height: 100vh;
     overflow-y: auto;
+  }
+}
+
+// Portait mode
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+  body {
+    background: radial-gradient(
+        circle at bottom center,
+        nth($light-gradient-colors, 1) 0,
+        nth($light-gradient-colors, 2) 100%
+      ),
+      $background-texture;
   }
 }
 </style>
