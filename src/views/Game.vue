@@ -3,16 +3,22 @@
     <Player
       class="game-player game-player--white"
       color="white"
-      :score="5"
-      status="idle"
+      :score="$store.getters.scores.white"
+      :status="$store.getters.statuses.white"
     />
     <Player
       class="game-player game-player--black"
       color="black"
-      :score="3"
-      status="play"
+      :score="$store.getters.scores.black"
+      :status="$store.getters.statuses.black"
     />
-    <div class="game-content"><Board class="game-board" /></div>
+    <div class="game-content">
+      <Board
+        class="game-board"
+        :cells="$store.getters.cells"
+        :onMove="this.handleMove"
+      />
+    </div>
   </main>
 </template>
 
@@ -28,6 +34,18 @@ export default {
   components: {
     Board,
     Player,
+  },
+  methods: {
+    /**
+     * Function called whenever a move is made by a player.
+     *
+     * @param {number} row Row index.
+     * @param {number} col Column index.
+     * @returns {void} Nothing.
+     */
+    handleMove(row, col) {
+      this.$store.commit('play', { row, col });
+    },
   },
 };
 </script>

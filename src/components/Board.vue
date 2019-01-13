@@ -1,95 +1,21 @@
 <template>
   <div class="board">
     <div class="board-grid">
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell">
-        <Move class="board-move" color="black" :onClick="() => {}" />
+      <div
+        v-for="{ row, col, isStone, isMove, color } in cells"
+        :key="`${row}-${col}`"
+        :class="
+          `board-cell ${(row + col) % 2 === 1 ? 'board-cell--alternate' : ''}`
+        "
+      >
+        <Stone class="board-stone" v-if="isStone" :color="color" />
+        <Move
+          v-if="isMove"
+          class="board-move"
+          :color="color"
+          :onClick="() => onMove(row, col)"
+        />
       </div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
-
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"><Stone class="board-stone" color="black" /></div>
-      <div class="board-cell board-cell--alternate">
-        <Stone class="board-stone" color="white" />
-      </div>
-      <div class="board-cell"><Stone class="board-stone" color="black" /></div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate">
-        <Stone class="board-stone" color="black" />
-      </div>
-      <div class="board-cell"><Stone class="board-stone" color="white" /></div>
-      <div class="board-cell board-cell--alternate">
-        <Stone class="board-stone" color="white" />
-      </div>
-      <div class="board-cell"><Stone class="board-stone" color="white" /></div>
-      <div class="board-cell board-cell--alternate">
-        <Move class="board-move" color="black" :onClick="() => {}" />
-      </div>
-      <div class="board-cell"></div>
-
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"><Stone class="board-stone" color="black" /></div>
-      <div class="board-cell board-cell--alternate">
-        <Stone class="board-stone" color="white" />
-      </div>
-      <div class="board-cell"><Stone class="board-stone" color="black" /></div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"><Stone class="board-stone" color="white" /></div>
-      <div class="board-cell board-cell--alternate">
-        <Stone class="board-stone" color="black" />
-      </div>
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
-
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell">
-        <Move class="board-move" color="black" :onClick="() => {}" />
-      </div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell">
-        <Move class="board-move" color="black" :onClick="() => {}" />
-      </div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell board-cell--alternate"></div>
-      <div class="board-cell"></div>
     </div>
   </div>
 </template>
@@ -106,6 +32,28 @@ export default {
   components: {
     Stone,
     Move,
+  },
+  props: {
+    /**
+     * Array of cells.
+     *
+     * @type {Cell[]}
+     * @see @/store For `Cell` documentation.
+     */
+    cells: {
+      type: Array,
+      required: true,
+    },
+
+    /**
+     * Function to call on player click, when it is a move,
+     *
+     * @type {Function}
+     */
+    onMove: {
+      type: Function,
+      required: true,
+    },
   },
 };
 </script>

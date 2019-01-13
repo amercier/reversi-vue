@@ -22,7 +22,7 @@ exports[`Player.vue renders a white player who has to play 1`] = `
 <div class="player">
   <stone-stub color="white" class="player-stone player-stone-white"></stone-stub>
   <div class="player-score">10</div>
-  <div class="player-status player-status--move">
+  <div class="player-status player-status--play">
     Your turn
   </div>
   <!---->
