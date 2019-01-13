@@ -2,7 +2,7 @@
   <div class="player">
     <Stone :class="`player-stone player-stone-${color}`" :color="color" />
     <div class="player-score">{{ score }}</div>
-    <div v-if="status === 'play'" class="player-status player-status--move">
+    <div v-if="status === 'play'" class="player-status player-status--play">
       Your turn
     </div>
     <div v-if="status === 'won'" class="player-status">You win!</div>
@@ -97,7 +97,7 @@ export default {
     left: 0;
     right: 0;
 
-    &--move {
+    &--play {
       animation: 2s blink ease-out infinite;
     }
   }
