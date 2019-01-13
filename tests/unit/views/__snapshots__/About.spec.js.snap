@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About.vue renders its components 1`] = `
+<main>
+  <div class="about">
+    <h1 class="about-title">Reversi</h1>
+    <p class="about-paragraph">
+      Created by
+      <a href="https://github.com/amercier" target="_blank" rel="nofollow noopener noreferrer" class="about-link">Alex Mercier</a>
+      for
+      <a href="https://www.backmarket.fr/" target="_blank" rel="nofollow noopener noreferrer" class="about-link">Back Market</a>.
+    </p>
+    <h2 class="about-subtitle">Development</h2>
+    <p class="about-paragraph">
+      This game was developed with
+      <a href="https://vuejs.org/" target="_blank" rel="nofollow noopener noreferrer" class="about-link">Vue.js 2</a>, using
+      <a href="https://cli.vuejs.org/" target="_blank" rel="nofollow noopener noreferrer" class="about-link">Vue CLI 3</a>
+      and
+      <a href="https://vuex.vuejs.org/" target="_blank" rel="nofollow noopener noreferrer" class="about-link">Vuex</a>.
+    </p>
+    <p class="about-paragraph">
+      Source code is available on
+      <a href="https://github.com/amercier/reversi-vue" target="_blank" rel="nofollow noopener noreferrer" class="about-link">Github</a>.
+    </p>
+    <h2 class="about-subtitle">Credits</h2>
+    <p class="about-paragraph">
+      Seamless wood textures by
+      <a href="https://www.deviantart.com/siberiancrab" target="_blank" rel="nofollow noopener noreferrer" class="about-link">SiberiaCrab</a>
+      and
+      <a href="https://fr.pngtree.com/" target="_blank" rel="nofollow noopener noreferrer" class="about-link">PNG Tree</a>.
+    </p>
+    <p class="about-paragraph"><a href="https://www.npmjs.com/package/reversi" target="_blank" rel="nofollow noopener noreferrer" class="about-link">reversi</a>
+      by
+      <a href="http://kjirou.net/" target="_blank" rel="nofollow noopener noreferrer" class="about-link">Koujirou Ishii</a>.
+    </p>
+    <p>Thank you so much for your hard work!</p>
+  </div>
+</main>
+`;

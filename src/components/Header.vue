@@ -42,5 +42,6 @@ export default {
   color: #000;
   box-shadow: 0 0 2em 0.5em #000;
   height: $HEADER_HEIGHT;
+  z-index: 1;
 }
 </style>
