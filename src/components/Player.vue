@@ -79,17 +79,17 @@ export default {
   text-align: center;
 
   position: relative;
-  padding-bottom: 2em; // Room for status
+  padding-bottom: 2rem; // Room for status
 
   &-stone {
-    width: 3em;
-    height: 3em;
+    width: 3rem;
+    height: 3rem;
     margin: 0 auto;
   }
 
   &-score {
-    margin: 1em 0;
-    font-size: 2em;
+    margin: 1rem 0;
+    font-size: 2rem;
   }
 
   &-status {
@@ -106,7 +106,7 @@ export default {
 
 // Portait mode
 @media screen and (max-width: 1200px) and (orientation: portrait) {
-  $status-width: 5em;
+  $status-width: 5rem;
 
   .player {
     display: flex;
@@ -115,13 +115,13 @@ export default {
     padding-bottom: 0;
 
     &-stone {
-      width: 2.5em;
-      height: 2.5em;
+      width: 2.5rem;
+      height: 2.5rem;
       margin: 0;
     }
 
     &-score {
-      margin: 0 1em;
+      margin: 0 1rem;
     }
 
     &-status {

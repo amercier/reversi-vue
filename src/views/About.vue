@@ -99,22 +99,22 @@
 
 <style lang="scss">
 .about {
-  max-width: 20em;
-  margin: 2em auto;
+  max-width: 20rem;
+  margin: 2rem auto;
   text-align: center;
   line-height: 2;
 
   &-title {
-    font-size: 3em;
+    font-size: 3rem;
   }
 
   &-subtitle {
-    margin: 1em 0;
-    font-size: 2em;
+    margin: 1rem 0;
+    font-size: 2rem;
   }
 
   &-paragraph {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
   }
 
   &-link {

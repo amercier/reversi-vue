@@ -40,7 +40,7 @@ export default {
   background: #c58e57 url(../assets/wooden-board.jpg) repeat 0 0;
   background-attachment: fixed;
   color: #000;
-  box-shadow: 0 0 2em 0.5em #000;
+  box-shadow: 0 0 2rem 0.5rem #000;
   height: $HEADER_HEIGHT;
   z-index: 1;
 }

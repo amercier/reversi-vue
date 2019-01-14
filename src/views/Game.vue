@@ -51,8 +51,8 @@ export default {
 </script>
 
 <style lang="scss">
-$player-width: 8em;
-$container-padding: 1.5em;
+$player-width: 8rem;
+$container-padding: 1.5rem;
 
 .game {
   display: flex;
@@ -94,7 +94,7 @@ $container-padding: 1.5em;
 
 // Portait mode
 @media screen and (max-width: 1024px) and (orientation: portrait) {
-  $player-width: 2.5em;
+  $player-width: 2.5rem;
 
   .game {
     flex-direction: column;

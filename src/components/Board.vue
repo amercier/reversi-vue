@@ -59,17 +59,17 @@ export default {
 </script>
 
 <style lang="scss">
-$board-padding: 1em;
+$board-padding: 1rem;
 $grid-color: #1b881b;
 $cell-padding: 10%;
-$cell-border-thickness: 0.1em;
+$cell-border-thickness: 0.1rem;
 
 .board {
   background: #c58e57 url(../assets/wooden-board.jpg) repeat 0 0;
   background-attachment: fixed;
   padding: $board-padding;
   border-radius: $board-padding;
-  box-shadow: 0 0 2em 0.5em #000;
+  box-shadow: 0 0 2rem 0.5rem #000;
 
   &-grid {
     display: grid;

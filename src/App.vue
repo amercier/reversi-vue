@@ -24,7 +24,7 @@ $light-gradient-colors: rgba(220, 180, 50, 0.1), rgba(220, 180, 50, 0);
 
 $background-texture: url(./assets/wooden-planks.jpg) repeat top left;
 
-body {
+html {
   background: radial-gradient(
       circle at center right,
       nth($light-gradient-colors, 1) 0,
@@ -56,7 +56,7 @@ a {
 
 // Portait mode
 @media screen and (max-width: 1024px) and (orientation: portrait) {
-  body {
+  html {
     background: radial-gradient(
         circle at bottom center,
         nth($light-gradient-colors, 1) 0,

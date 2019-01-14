@@ -62,11 +62,11 @@ export default {
     align-items: center;
     list-style: none;
     display: block;
-    margin: 0 1em;
+    margin: 0 1rem;
   }
 
   &-link {
-    padding: 0.5em 1em;
+    padding: 0.5rem 1rem;
     white-space: nowrap;
     transition: opacity 150ms;
 

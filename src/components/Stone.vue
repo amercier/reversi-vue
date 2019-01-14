@@ -40,7 +40,7 @@ $colors: (
 
 .stone {
   position: relative;
-  box-shadow: 0 0 0.5em 0 #000;
+  box-shadow: 0 0 0.5rem 0 #000;
   border-radius: 50%;
 
   &::before {
