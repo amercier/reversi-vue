@@ -65,4 +65,18 @@ a {
       $background-texture;
   }
 }
+
+// High-DPI devices
+// TODO automate resolution
+$wooden-planks-size: 2048px, 2048px;
+@each $scale in (1.5, 2, 3) {
+  @media (-webkit-min-device-pixel-ratio: $scale),
+    (min-resolution: ($scale * 96)dpi) {
+    html {
+      background-size: auto,
+        (nth($wooden-planks-size, 1) / (10 * $scale))
+          (nth($wooden-planks-size, 2) / (10 * $scale));
+    }
+  }
+}
 </style>

@@ -121,4 +121,18 @@ $cell-border-thickness: 0.1rem;
     left: 0;
   }
 }
+
+// High-DPI devices
+// TODO automate resolution
+$wooden-board-size: 430px, 556px;
+@each $scale in (1.5, 2, 3) {
+  @media (-webkit-min-device-pixel-ratio: $scale),
+    (min-resolution: ($scale * 96)dpi) {
+    .board,
+    .board-grid {
+      background-size: (nth($wooden-board-size, 1) / $scale)
+        (nth($wooden-board-size, 2) / $scale);
+    }
+  }
+}
 </style>

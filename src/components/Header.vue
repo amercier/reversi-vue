@@ -44,4 +44,17 @@ export default {
   height: $HEADER_HEIGHT;
   z-index: 1;
 }
+
+// High-DPI devices
+// TODO automate resolution
+$wooden-board-size: 430px, 556px;
+@each $scale in (1.5, 2, 3) {
+  @media (-webkit-min-device-pixel-ratio: $scale),
+    (min-resolution: ($scale * 96)dpi) {
+    .header {
+      background-size: (nth($wooden-board-size, 1) / $scale)
+        (nth($wooden-board-size, 2) / $scale);
+    }
+  }
+}
 </style>
