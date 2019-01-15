@@ -1,4 +1,28 @@
 describe('Game page', () => {
+  it('Displays the initial board', () => {
+    cy.visit('/');
+    cy.get('.game-player--white .player-score').should('have.text', '2');
+    cy.get('.game-player--black .player-score').should('have.text', '2');
+    cy.get('.game-player--white .player-status').should('have.text', '');
+    cy.get('.game-player--black .player-status').should('contain', 'Your turn');
+    cy.get(`.board-cell:nth-child(${1 + 8 * 3 + 3}) > :first-child`).should(
+      'match',
+      '.board-stone.stone--white',
+    );
+    cy.get(`.board-cell:nth-child(${1 + 8 * 3 + 4}) > :first-child`).should(
+      'match',
+      '.board-stone.stone--black',
+    );
+    cy.get(`.board-cell:nth-child(${1 + 8 * 4 + 3}) > :first-child`).should(
+      'match',
+      '.board-stone.stone--black',
+    );
+    cy.get(`.board-cell:nth-child(${1 + 8 * 4 + 4}) > :first-child`).should(
+      'match',
+      '.board-stone.stone--white',
+    );
+  });
+
   it('Can complete a game', () => {
     cy.visit('/');
 
