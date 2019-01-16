@@ -1,5 +1,9 @@
 <template>
-  <a href="#" :class="`move move--${color}`" v-on:click.prevent="onClick()"></a>
+  <a
+    href="#"
+    :class="`move move--${color}`"
+    v-on:click.prevent="$emit('clicked')"
+  ></a>
 </template>
 
 <script>
@@ -21,18 +25,7 @@ export default {
       validator: value => COLORS.indexOf(value) !== -1,
       required: true,
     },
-
-    /**
-     * Function called when the button is clicked.
-     *
-     * @returns {void} Nothing.
-     */
-    onClick: {
-      type: Function,
-      required: true,
-    },
   },
-  methods: {},
 };
 </script>
 

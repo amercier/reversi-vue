@@ -13,7 +13,7 @@
           v-if="isMove"
           class="board-move"
           :color="color"
-          :onClick="() => onMove(row, col)"
+          @clicked="$emit('moved', row, col)"
         />
       </div>
     </div>
@@ -42,16 +42,6 @@ export default {
      */
     cells: {
       type: Array,
-      required: true,
-    },
-
-    /**
-     * Function to call on player click, when it is a move,
-     *
-     * @type {Function}
-     */
-    onMove: {
-      type: Function,
       required: true,
     },
   },

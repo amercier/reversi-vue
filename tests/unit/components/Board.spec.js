@@ -9,7 +9,6 @@ describe('Board.vue', () => {
       { row: 1, col: 0, isStone: false, isMove: true, color: 'black' },
       { row: 1, col: 1, isStone: false, isMove: false, color: 'blank' },
     ],
-    onMove: () => {},
   };
 
   it('renders without crashing', () => {
@@ -19,5 +18,13 @@ describe('Board.vue', () => {
   it('renders the board', () => {
     const board = shallowMount(Board, { propsData });
     expect(board.html()).toMatchSnapshot();
+  });
+
+  it('emits a "moved" event when a move is clicked', () => {
+    const board = shallowMount(Board, { propsData });
+    board.find('.board-move').vm.$emit('clicked');
+    expect(board.emitted('moved')).toBeTruthy();
+    expect(board.emitted('moved').length).toBe(1);
+    expect(board.emitted('moved')[0]).toEqual([1, 0]);
   });
 });

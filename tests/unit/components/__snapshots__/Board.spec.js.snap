@@ -13,7 +13,7 @@ exports[`Board.vue renders the board 1`] = `
     </div>
     <div class="board-cell board-cell--alternate">
       <!---->
-      <move-stub color="black" onclick="function () { return _vm.onMove(row, col); }" class="board-move"></move-stub>
+      <move-stub color="black" class="board-move"></move-stub>
     </div>
     <div class="board-cell ">
       <!---->

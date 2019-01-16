@@ -16,7 +16,7 @@
       <Board
         class="game-board"
         :cells="$store.getters.cells"
-        :onMove="this.handleMove"
+        @moved="handleMove"
       />
     </div>
   </main>
