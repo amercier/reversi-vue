@@ -6,13 +6,13 @@ describe('Stone.vue', () => {
     const stone = shallowMount(Stone, {
       propsData: { color: 'white' },
     });
-    expect(stone.html()).toMatchSnapshot();
+    expect(stone.element).toMatchSnapshot();
   });
 
   it('renders a black stone', () => {
     const stone = shallowMount(Stone, {
       propsData: { color: 'black' },
     });
-    expect(stone.html()).toMatchSnapshot();
+    expect(stone.element).toMatchSnapshot();
   });
 });

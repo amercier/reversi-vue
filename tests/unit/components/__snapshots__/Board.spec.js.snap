@@ -1,22 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Board.vue renders the board 1`] = `
-<div class="board">
-  <div class="board-grid">
-    <div class="board-cell ">
-      <stone-stub color="white" class="board-stone"></stone-stub>
+<div
+  class="board"
+>
+  <div
+    class="board-grid"
+  >
+    <div
+      class="board-cell "
+    >
+      <stone-stub
+        class="board-stone"
+        color="white"
+      />
+       
       <!---->
     </div>
-    <div class="board-cell board-cell--alternate">
-      <stone-stub color="black" class="board-stone"></stone-stub>
+    <div
+      class="board-cell board-cell--alternate"
+    >
+      <stone-stub
+        class="board-stone"
+        color="black"
+      />
+       
       <!---->
     </div>
-    <div class="board-cell board-cell--alternate">
+    <div
+      class="board-cell board-cell--alternate"
+    >
       <!---->
-      <move-stub color="black" class="board-move"></move-stub>
+       
+      <move-stub
+        class="board-move"
+        color="black"
+      />
     </div>
-    <div class="board-cell ">
+    <div
+      class="board-cell "
+    >
       <!---->
+       
       <!---->
     </div>
   </div>

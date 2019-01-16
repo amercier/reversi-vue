@@ -6,14 +6,14 @@ describe('Move.vue', () => {
     const move = shallowMount(Move, {
       propsData: { color: 'white' },
     });
-    expect(move.html()).toMatchSnapshot();
+    expect(move.element).toMatchSnapshot();
   });
 
   it('renders a black move', () => {
     const move = shallowMount(Move, {
       propsData: { color: 'black' },
     });
-    expect(move.html()).toMatchSnapshot();
+    expect(move.element).toMatchSnapshot();
   });
 
   it('emits a "clicked" event when clicked', () => {

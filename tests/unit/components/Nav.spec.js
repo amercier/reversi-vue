@@ -12,6 +12,6 @@ describe('Nav.vue', () => {
 
   it('renders its components', () => {
     const nav = shallowMount(Nav, { propsData, stubs: ['router-link'] });
-    expect(nav.html()).toMatchSnapshot();
+    expect(nav.element).toMatchSnapshot();
   });
 });
