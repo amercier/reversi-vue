@@ -5,6 +5,7 @@
 [![Reversi](media/screenshots.png)](https://reversi.amercier.com/)
 
 [![Build Status](https://travis-ci.org/amercier/reversi-vue.svg?branch=master)](https://travis-ci.org/amercier/reversi-vue)
+[![Test Coverage](https://img.shields.io/codecov/c/github/amercier/reversi-vue/master.svg)](https://codecov.io/github/amercier/reversi-vue?branch=master)
 [![Go to demo](https://img.shields.io/website-up-down-green-red/https/reversi.amercier.com.svg?label=website)](https://reversi.amercier.com/)
 [![Greenkeeper](https://badges.greenkeeper.io/amercier/reversi-vue.svg)](https://github.com/amercier/reversi-vue/issues?q=label%3Agreenkeeper)
 [![Dependency Status](https://img.shields.io/david/amercier/reversi-vue.svg)](https://david-dm.org/amercier/reversi-vue)
@@ -35,7 +36,7 @@ Spawns a development server on <http://localhost:8080/>. See [Contributing Guide
 Each commit is automatically tested on [Travis CI], which runs:
 
 - **Linting** using [ESLint] and [Prettier],
-- **Unit tests** using [Jest],
+- **Unit tests** using [Jest] with code coverage reported to [Codecov],
 - **End-to-end tests** using [Cypress].
 
 ## Continuous Delivery
@@ -63,6 +64,7 @@ Thank you so much for your hard work!
 [nodejs]: https://nodejs.org/
 [npm]: https://www.npmjs.com/
 [jest]: http://jestjs.io/
+[codecov]: https://codecov.io
 [cypress]: https://www.cypress.io/
 [eslint]: https://eslint.org/
 [prettier]: https://prettier.io/
