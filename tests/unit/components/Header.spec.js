@@ -20,7 +20,7 @@ describe('Header.vue', () => {
   describe('when links are passed', () => {
     it('renders its components', () => {
       const nav = shallowMount(Header, { store, localVue });
-      expect(nav.html()).toMatchSnapshot();
+      expect(nav.element).toMatchSnapshot();
     });
   });
 });

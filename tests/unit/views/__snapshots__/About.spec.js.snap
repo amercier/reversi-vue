@@ -2,38 +2,171 @@
 
 exports[`About.vue renders its components 1`] = `
 <main>
-  <div class="about">
-    <h1 class="about-title">Reversi</h1>
-    <p class="about-paragraph">
+  <div
+    class="about"
+  >
+    <h1
+      class="about-title"
+    >
+      Reversi
+    </h1>
+     
+    <p
+      class="about-paragraph"
+    >
+      
       Created by
-      <a href="https://github.com/amercier" target="_blank" rel="nofollow noopener noreferrer" class="about-link">Alex Mercier</a>
+      
+      <a
+        class="about-link"
+        href="https://github.com/amercier"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        Alex Mercier
+      </a>
+      
       for
-      <a href="https://www.backmarket.fr/" target="_blank" rel="nofollow noopener noreferrer" class="about-link">Back Market</a>.
+      
+      <a
+        class="about-link"
+        href="https://www.backmarket.fr/"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        Back Market
+      </a>
+      .
+    
     </p>
-    <h2 class="about-subtitle">Development</h2>
-    <p class="about-paragraph">
+     
+    <h2
+      class="about-subtitle"
+    >
+      Development
+    </h2>
+     
+    <p
+      class="about-paragraph"
+    >
+      
       This game was developed with
-      <a href="https://vuejs.org/" target="_blank" rel="nofollow noopener noreferrer" class="about-link">Vue.js 2</a>, using
-      <a href="https://cli.vuejs.org/" target="_blank" rel="nofollow noopener noreferrer" class="about-link">Vue CLI 3</a>
+      
+      <a
+        class="about-link"
+        href="https://vuejs.org/"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        Vue.js 2
+      </a>
+      , using
+      
+      <a
+        class="about-link"
+        href="https://cli.vuejs.org/"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        Vue CLI 3
+      </a>
+      
       and
-      <a href="https://vuex.vuejs.org/" target="_blank" rel="nofollow noopener noreferrer" class="about-link">Vuex</a>.
+      
+      <a
+        class="about-link"
+        href="https://vuex.vuejs.org/"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        Vuex
+      </a>
+      .
+    
     </p>
-    <p class="about-paragraph">
+     
+    <p
+      class="about-paragraph"
+    >
+      
       Source code is available on
-      <a href="https://github.com/amercier/reversi-vue" target="_blank" rel="nofollow noopener noreferrer" class="about-link">Github</a>.
+      
+      <a
+        class="about-link"
+        href="https://github.com/amercier/reversi-vue"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        Github
+      </a>
+      .
+    
     </p>
-    <h2 class="about-subtitle">Credits</h2>
-    <p class="about-paragraph">
+     
+    <h2
+      class="about-subtitle"
+    >
+      Credits
+    </h2>
+     
+    <p
+      class="about-paragraph"
+    >
+      
       Seamless wood textures by
-      <a href="https://www.deviantart.com/siberiancrab" target="_blank" rel="nofollow noopener noreferrer" class="about-link">SiberiaCrab</a>
+      
+      <a
+        class="about-link"
+        href="https://www.deviantart.com/siberiancrab"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        SiberiaCrab
+      </a>
+      
       and
-      <a href="https://fr.pngtree.com/" target="_blank" rel="nofollow noopener noreferrer" class="about-link">PNG Tree</a>.
+      
+      <a
+        class="about-link"
+        href="https://fr.pngtree.com/"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        PNG Tree
+      </a>
+      .
+    
     </p>
-    <p class="about-paragraph"><a href="https://www.npmjs.com/package/reversi" target="_blank" rel="nofollow noopener noreferrer" class="about-link">reversi</a>
+     
+    <p
+      class="about-paragraph"
+    >
+      <a
+        class="about-link"
+        href="https://www.npmjs.com/package/reversi"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        reversi
+      </a>
+      
       by
-      <a href="http://kjirou.net/" target="_blank" rel="nofollow noopener noreferrer" class="about-link">Koujirou Ishii</a>.
+      
+      <a
+        class="about-link"
+        href="http://kjirou.net/"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        Koujirou Ishii
+      </a>
+      .
+    
     </p>
-    <p>Thank you so much for your hard work!</p>
+     
+    <p>
+      Thank you so much for your hard work!
+    </p>
   </div>
 </main>
 `;

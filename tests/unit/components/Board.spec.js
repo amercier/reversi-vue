@@ -17,7 +17,7 @@ describe('Board.vue', () => {
 
   it('renders the board', () => {
     const board = shallowMount(Board, { propsData });
-    expect(board.html()).toMatchSnapshot();
+    expect(board.element).toMatchSnapshot();
   });
 
   it('emits a "moved" event when a move is clicked', () => {

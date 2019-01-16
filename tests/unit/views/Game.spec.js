@@ -19,6 +19,6 @@ describe('Game.vue', () => {
 
   it('renders its components', () => {
     const game = shallowMount(Game, { store, localVue });
-    expect(game.html()).toMatchSnapshot();
+    expect(game.element).toMatchSnapshot();
   });
 });
