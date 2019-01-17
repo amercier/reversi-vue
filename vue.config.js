@@ -1,3 +1,4 @@
+const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 const constants = require('./src/config');
 
 /**
@@ -18,5 +19,29 @@ module.exports = {
         ),
       },
     },
+  },
+
+  /**
+   * Inline critical CSS.
+   */
+  configureWebpack: config => {
+    // Add critical entry point.
+    config.entry.critical = ['./src/assets/critical.scss'];
+  },
+  chainWebpack: config => {
+    // Remove <link rel=preload as=script> for inlined scripts and stylesheets.
+    config.plugin('preload').tap(args => {
+      args[0].fileBlacklist.push(/critical(\..*)?\.(css|js)$/);
+      return args;
+    });
+
+    // Register html-webpack-inline-source-plugin plugin.
+    config.plugin('inline-source').use(HtmlWebpackInlineSourcePlugin);
+
+    // Tell html-webpack-plugin to use html-webpack-inline-source-plugin plugin for critical assets.
+    config.plugin('html').tap(args => {
+      args[0].inlineSource = '/critical(\\..*)\\.(css|js)$';
+      return args;
+    });
   },
 };

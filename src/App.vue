@@ -6,8 +6,6 @@
 </template>
 
 <script>
-import './assets/scss/reset.scss';
-import './assets/scss/base.scss';
 import Header from '@/components/Header.vue';
 
 /**
