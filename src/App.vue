@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import './assets/scss/reset.scss';
+import './assets/scss/base.scss';
 import Header from '@/components/Header.vue';
 
 /**
@@ -22,7 +24,7 @@ export default {
 // Gradient under black player status to improve contrast
 $light-gradient-colors: rgba(220, 180, 50, 0.1), rgba(220, 180, 50, 0);
 
-$background-texture: url(./assets/wooden-planks.jpg) repeat top left;
+$background-texture: #170e07 url(./assets/wooden-planks.jpg) repeat top left;
 
 html {
   background: radial-gradient(
@@ -31,9 +33,6 @@ html {
       nth($light-gradient-colors, 2) 100%
     ),
     $background-texture;
-  color: white;
-  font-family: 'Roboto Slab', serif;
-  font-size: calc(8px + 1.2vmin);
 }
 
 a {
