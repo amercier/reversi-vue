@@ -74,7 +74,7 @@ $cell-padding: 10%;
 $cell-border-thickness: 0.1rem;
 
 .board {
-  background: #c58e57 url(../assets/wooden-board.jpg) repeat 0 0;
+  background: #a56538 url(../assets/wooden-board.jpg) repeat 0 0;
   background-attachment: fixed;
   padding: $board-padding;
   border-radius: $board-padding;
