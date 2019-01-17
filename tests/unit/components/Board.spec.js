@@ -27,4 +27,28 @@ describe('Board.vue', () => {
     expect(board.emitted('moved').length).toBe(1);
     expect(board.emitted('moved')[0]).toEqual([1, 0]);
   });
+
+  describe('methods', () => {
+    const { methods } = Board;
+
+    describe('position(row, col)', () => {
+      const { position } = methods;
+
+      it('returns A1 for [0,0]', () => {
+        expect(position(0, 0)).toBe('A1');
+      });
+
+      it('returns H1 for [0,7]', () => {
+        expect(position(0, 7)).toBe('H1');
+      });
+
+      it('returns A8 for [7,0]', () => {
+        expect(position(7, 0)).toBe('A8');
+      });
+
+      it('returns H8 for [7,7]', () => {
+        expect(position(7, 7)).toBe('H8');
+      });
+    });
+  });
 });

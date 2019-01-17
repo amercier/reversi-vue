@@ -14,6 +14,7 @@
           class="board-move"
           :color="color"
           @clicked="$emit('moved', row, col)"
+          :title="position(row, col)"
         />
       </div>
     </div>
@@ -43,6 +44,24 @@ export default {
     cells: {
       type: Array,
       required: true,
+    },
+  },
+  methods: {
+    /**
+     * Get a string representation of a [row, col] set.
+     *
+     * @example
+     *     position(0, 0); // "A1"
+     *     position(7, 0); // "H2"
+     *     position(0, 7); // "A8"
+     *     position(7, 7); // "H8"
+     *
+     * @param {number} row Row index.
+     * @param {number} col Column index.
+     * @returns {string} A string representation of the position.
+     */
+    position(row, col) {
+      return `${String.fromCharCode(97 + col).toUpperCase()}${row + 1}`;
     },
   },
 };
