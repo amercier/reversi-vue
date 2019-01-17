@@ -35,6 +35,7 @@ exports[`Board.vue renders the board 1`] = `
       <move-stub
         class="board-move"
         color="black"
+        title="A2"
       />
     </div>
     <div

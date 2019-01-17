@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss">
 .header {
-  background: #c58e57 url(../assets/wooden-board.jpg) repeat 0 0;
+  background: #a56538 url(../assets/wooden-board.jpg) repeat 0 0;
   background-attachment: fixed;
   color: #000;
   box-shadow: 0 0 2rem 0.5rem #000;

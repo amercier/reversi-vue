@@ -14,6 +14,7 @@
           class="board-move"
           :color="color"
           @clicked="$emit('moved', row, col)"
+          :title="position(row, col)"
         />
       </div>
     </div>
@@ -45,6 +46,24 @@ export default {
       required: true,
     },
   },
+  methods: {
+    /**
+     * Get a string representation of a [row, col] set.
+     *
+     * @example
+     *     position(0, 0); // "A1"
+     *     position(7, 0); // "H2"
+     *     position(0, 7); // "A8"
+     *     position(7, 7); // "H8"
+     *
+     * @param {number} row Row index.
+     * @param {number} col Column index.
+     * @returns {string} A string representation of the position.
+     */
+    position(row, col) {
+      return `${String.fromCharCode(97 + col).toUpperCase()}${row + 1}`;
+    },
+  },
 };
 </script>
 
@@ -55,7 +74,7 @@ $cell-padding: 10%;
 $cell-border-thickness: 0.1rem;
 
 .board {
-  background: #c58e57 url(../assets/wooden-board.jpg) repeat 0 0;
+  background: #a56538 url(../assets/wooden-board.jpg) repeat 0 0;
   background-attachment: fixed;
   padding: $board-padding;
   border-radius: $board-padding;

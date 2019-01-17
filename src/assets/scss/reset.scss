@@ -4,11 +4,13 @@
  * - set all font sizes to 1em,
  * - use "quirky" box model.
  **/
-*,
-*::before,
-*::after {
-  font-size: inherit;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+* {
+  &,
+  &::before,
+  &::after {
+    font-size: inherit;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
 }
