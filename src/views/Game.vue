@@ -30,7 +30,7 @@ import Player from '@/components/Player.vue';
  * Game page.
  */
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
     Board,
     Player,

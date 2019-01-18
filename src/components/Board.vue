@@ -8,13 +8,13 @@
           `board-cell ${(row + col) % 2 === 1 ? 'board-cell--alternate' : ''}`
         "
       >
-        <Stone class="board-stone" v-if="isStone" :color="color" />
+        <Stone v-if="isStone" class="board-stone" :color="color" />
         <Move
           v-if="isMove"
           class="board-move"
           :color="color"
-          @clicked="$emit('moved', row, col)"
           :title="position(row, col)"
+          @clicked="$emit('moved', row, col)"
         />
       </div>
     </div>

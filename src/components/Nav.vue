@@ -2,21 +2,21 @@
   <nav class="nav">
     <ul class="nav-list">
       <li
-        class="nav-item"
         v-for="[location, label, disabled] in links"
         :key="`${label}`"
+        class="nav-item"
       >
         <router-link
-          :class="`nav-link ${disabled ? 'nav-link--disabled' : ''}`"
           v-if="typeof location === 'string'"
+          :class="`nav-link ${disabled ? 'nav-link--disabled' : ''}`"
           :to="location"
           >{{ label }}</router-link
         >
         <a
+          v-if="typeof location === 'function'"
           :class="`nav-link ${disabled ? 'nav-link--disabled' : ''}`"
           href="#"
-          v-if="typeof location === 'function'"
-          v-on:click.prevent="disabled || location()"
+          @click.prevent="disabled || location()"
           >{{ label }}</a
         >
       </li>
