@@ -21,6 +21,9 @@ const STATUSES = ['idle', 'play', 'won'];
  */
 export default {
   name: 'Player',
+  components: {
+    Stone,
+  },
   props: {
     /**
      * Player color.
@@ -29,6 +32,7 @@ export default {
      */
     color: {
       type: String,
+      required: true,
       validator: value => COLORS.indexOf(value) !== -1,
     },
 
@@ -52,12 +56,9 @@ export default {
      */
     status: {
       type: String,
-      validator: value => STATUSES.indexOf(value) !== -1,
       required: true,
+      validator: value => STATUSES.indexOf(value) !== -1,
     },
-  },
-  components: {
-    Stone,
   },
 };
 </script>

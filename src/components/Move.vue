@@ -2,7 +2,7 @@
   <a
     href="#"
     :class="`move move--${color}`"
-    v-on:click.prevent="$emit('clicked')"
+    @click.prevent="$emit('clicked')"
   ></a>
 </template>
 

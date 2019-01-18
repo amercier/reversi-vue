@@ -8,6 +8,8 @@ const constants = require('./src/config');
  * @see Configuration Reference: https://cli.vuejs.org/config/
  */
 module.exports = {
+  /* eslint-disable valid-jsdoc, jsdoc/require-example, jsdoc/require-param */
+
   /**
    * Global SCSS.
    */
@@ -50,4 +52,6 @@ module.exports = {
       return args;
     });
   },
+
+  /* eslint-enable valid-jsdoc, jsdoc/require-example, jsdoc/require-param */
 };

@@ -10,24 +10,24 @@ exports[`Nav.vue renders its components 1`] = `
     <li
       class="nav-item"
     >
-      <router-link-stub
+      <routerlink-stub
         class="nav-link "
         to="/a"
       >
         Link 1
-      </router-link-stub>
+      </routerlink-stub>
        
       <!---->
     </li>
     <li
       class="nav-item"
     >
-      <router-link-stub
+      <routerlink-stub
         class="nav-link "
         to="/b"
       >
         Link 2
-      </router-link-stub>
+      </routerlink-stub>
        
       <!---->
     </li>

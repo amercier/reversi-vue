@@ -6,8 +6,27 @@ import { BOARD_SIZE } from './config';
 Vue.use(Vuex);
 
 /**
- * Get a square-to-cell converter.
+ * Core logics for the Reversi.
+ * @namespace reversi
+ * @see NPM package documentation: https://www.npmjs.com/package/reversi
  *
+ * @typedef {Object} Game
+ * @memberof reversi
+ *
+ * @typedef {Object} Board
+ * @memberof reversi
+ *
+ * @typedef {Object} Square
+ * @memberof reversi
+ *
+ * @var PIECE_TYPES
+ * @property {string} BLANK Empty cell.
+ * @property {string} WHITE White stone.
+ * @property {string} BLACK Black stone.
+ * @memberof reversi
+ */
+
+/**
  * @typedef {Object} Cell
  * @property {number} row Row index.
  * @property {number} col Column index.
@@ -15,41 +34,53 @@ Vue.use(Vuex);
  * @property {boolean} isStone Whether the cell contains a stone.
  * @property {boolean} isMove Whether the cell contains a potential move.
  * @property {string} color Color for the stone or move.
+ */
+
+/**
+ * Get a square-to-cell converter.
  *
- * @typedef {Function} SquareToCell
- * @param {Reversi.Square} square A reversi square.
- * @return {Cell} The cell corresponding to `square`.
+ * @example
+ *   const { board } = new Game();
+ *   const squares = board.squares[0]; // First row
+ *   const cells = squares.map(getSquareToCell(board, PIECE_TYPES.BLACK);
  *
- * @param {reversi.Game} game A game
- * @param {string} nextPieceType Next color to play: either PIECE_TYPES.WHITE or PIECE_TYPES.BLACK.
- * @returns {SquareToCell} The square-to-cell converter.
+ * @param {Board} board - A game board.
+ * @param {string} nextPieceType - Next color to play: either PIECE_TYPES.WHITE or PIECE_TYPES.BLACK.
+ * @returns {squareToCell} The square-to-cell converter.
  *
  * @see Reversi package: https://www.npmjs.com/package/reversi
  */
-export const getSquareToCell = (board, nextPieceType) => ({
-  rowIndex: row,
-  colIndex: col,
-  pieceType,
-}) => {
-  const isMove =
-    pieceType === PIECE_TYPES.BLANK &&
-    board.isPlaceableSquare(row, col, nextPieceType);
-  return {
-    row,
-    col,
-    isStone: pieceType !== PIECE_TYPES.BLANK,
-    isMove,
-    color: isMove
-      ? board.isPlaceableSquare(row, col, nextPieceType)
-        ? nextPieceType.toLowerCase()
-        : null
-      : pieceType.toLowerCase(),
+export function getSquareToCell(board, nextPieceType) {
+  /**
+   * @typedef {Function} squareToCell
+   * @example
+   *   squareToCell({ rowIndex: 0, colIndex: 0, pieceType: 'BLACK' })
+   * @param {Square} square - A reversi square.
+   * @returns {Cell} The cell corresponding to `square`.
+   */
+  return function squareToCell({ rowIndex: row, colIndex: col, pieceType }) {
+    const isMove =
+      pieceType === PIECE_TYPES.BLANK &&
+      board.isPlaceableSquare(row, col, nextPieceType);
+    return {
+      row,
+      col,
+      isStone: pieceType !== PIECE_TYPES.BLANK,
+      isMove,
+      color: isMove
+        ? board.isPlaceableSquare(row, col, nextPieceType)
+          ? nextPieceType.toLowerCase()
+          : null
+        : pieceType.toLowerCase(),
+    };
   };
-};
+}
 
 /**
  * Create a new store.
  *
+ * @example
+ *   createStore();
  * @returns {Vuex.Store} A new store.
  */
 export const createStore = () =>
@@ -83,10 +114,12 @@ export const createStore = () =>
      * @see https://vuex.vuejs.org/guide/getters.html
      */
     getters: {
+      /* eslint-disable jsdoc/require-param, jsdoc/require-example */
+
       /**
        * The game instance.
        *
-       * @type {reversi.Game}
+       * @returns {Game} The game instance.
        */
       game({ game }) {
         return game;
@@ -95,7 +128,7 @@ export const createStore = () =>
       /**
        * Current cells, as a flattened array.
        *
-       * @param {Cell[]}
+       * @returns {Cell[]} A list containing all cells of the board.
        */
       cells({ game, nextPieceType }) {
         return game.board.squares.reduce(
@@ -110,7 +143,6 @@ export const createStore = () =>
       /**
        * Current scores.
        *
-       * @param {reversi.Game} game The game instance.
        * @returns {Object} An object containing current `white` and `black` scores (numbers).
        */
       scores({ game }) {
@@ -124,7 +156,6 @@ export const createStore = () =>
       /**
        * Current scores.
        *
-       * @param {reversi.Game} game The game instance.
        * @returns {Object} An object containing current `white` and `black` statuses:
        * - "idle": do nothing,
        * - "play": player is playing,
@@ -146,12 +177,20 @@ export const createStore = () =>
         };
       },
 
+      /**
+       * Whether the game is in its "start" state.
+       *
+       * @returns {boolean} `true` if the game is in its "start" state, `false` if a move has been
+       * played.
+       */
       isAtStart({ game }) {
         return (
           game.board.countByPieceType()[PIECE_TYPES.BLANK] ===
           BOARD_SIZE * BOARD_SIZE - 4
         );
       },
+
+      /* eslint-enable jsdoc/require-param, jsdoc/require-example */
     },
 
     /**
@@ -163,11 +202,15 @@ export const createStore = () =>
       /**
        * Proceed with a game play.
        *
-       * @param {Object} state Previous state.
-       * @param {Object} move Move.
-       * @param {number} move.row Index of row to play.
-       * @param {number} move.col Index of column to play.
-       * @returns {void} Nothing.
+       * @example
+       *   // Play on first row, last column
+       *   $store.commit('play', { row: 0, col: 7 });
+       *
+       * @param {Object} state - Previous state.
+       * @param {Object} move - Move.
+       * @param {number} move.row - Index of row to play.
+       * @param {number} move.col - Index of column to play.
+       * @returns {undefined} Nothing.
        */
       play(state, { row, col }) {
         const {
@@ -181,7 +224,12 @@ export const createStore = () =>
       /**
        * Restart the game.
        *
-       * @returns {void} Nothing.
+       * @example
+       *   // Reatart the game
+       *   $store.commit('restart');
+       *
+       * @param {Object} state - Previous state.
+       * @returns {undefined} Nothing.
        */
       restart(state) {
         state.game = new Game();

@@ -1,5 +1,5 @@
 describe('Game page', () => {
-  it('Displays the initial board', () => {
+  it('displays the initial board', () => {
     cy.visit('/');
     cy.get('.game-player--white .player-score').should('have.text', '2');
     cy.get('.game-player--black .player-score').should('have.text', '2');
@@ -23,7 +23,7 @@ describe('Game page', () => {
     );
   });
 
-  it('Can complete a game', () => {
+  it('can complete a game', () => {
     cy.visit('/');
 
     [

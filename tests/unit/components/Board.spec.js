@@ -12,7 +12,7 @@ describe('Board.vue', () => {
   };
 
   it('renders without crashing', () => {
-    shallowMount(Board, { propsData });
+    expect(() => shallowMount(Board, { propsData })).not.toThrow();
   });
 
   it('renders the board', () => {
@@ -23,9 +23,9 @@ describe('Board.vue', () => {
   it('emits a "moved" event when a move is clicked', () => {
     const board = shallowMount(Board, { propsData });
     board.find('.board-move').vm.$emit('clicked');
-    expect(board.emitted('moved')).toBeTruthy();
-    expect(board.emitted('moved').length).toBe(1);
-    expect(board.emitted('moved')[0]).toEqual([1, 0]);
+    expect(board.emitted('moved')).toBeArray();
+    expect(board.emitted('moved')).toHaveLength(1);
+    expect(board.emitted('moved')[0]).toStrictEqual([1, 0]);
   });
 
   describe('methods', () => {

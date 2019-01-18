@@ -8,13 +8,13 @@
           `board-cell ${(row + col) % 2 === 1 ? 'board-cell--alternate' : ''}`
         "
       >
-        <Stone class="board-stone" v-if="isStone" :color="color" />
+        <Stone v-if="isStone" class="board-stone" :color="color" />
         <Move
           v-if="isMove"
           class="board-move"
           :color="color"
-          @clicked="$emit('moved', row, col)"
           :title="position(row, col)"
+          @clicked="$emit('moved', row, col)"
         />
       </div>
     </div>
@@ -56,8 +56,8 @@ export default {
      *     position(0, 7); // "A8"
      *     position(7, 7); // "H8"
      *
-     * @param {number} row Row index.
-     * @param {number} col Column index.
+     * @param {number} row - Row index.
+     * @param {number} col - Column index.
      * @returns {string} A string representation of the position.
      */
     position(row, col) {

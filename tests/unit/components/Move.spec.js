@@ -21,7 +21,7 @@ describe('Move.vue', () => {
       propsData: { color: 'white' },
     });
     move.trigger('click');
-    expect(move.emitted('clicked')).toBeTruthy();
-    expect(move.emitted('clicked').length).toBe(1);
+    expect(move.emitted('clicked')).toBeArray();
+    expect(move.emitted('clicked')).toHaveLength(1);
   });
 });

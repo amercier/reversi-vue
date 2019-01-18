@@ -30,7 +30,7 @@ import Player from '@/components/Player.vue';
  * Game page.
  */
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
     Board,
     Player,
@@ -39,9 +39,12 @@ export default {
     /**
      * Function called whenever a move is made by a player.
      *
-     * @param {number} row Row index.
-     * @param {number} col Column index.
-     * @returns {void} Nothing.
+     * @example
+     *   // Play on first row, last column
+     *   <a v-on:click.prevent="handleMove(0, 7)">
+     * @param {number} row - Row index.
+     * @param {number} col - Column index.
+     * @returns {undefined} Nothing.
      */
     handleMove(row, col) {
       this.$store.commit('play', { row, col });
