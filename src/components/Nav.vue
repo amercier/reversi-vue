@@ -6,11 +6,11 @@
         :key="`${label}`"
         class="nav-item"
       >
-        <router-link
+        <RouterLink
           v-if="typeof location === 'string'"
           :class="`nav-link ${disabled ? 'nav-link--disabled' : ''}`"
           :to="location"
-          >{{ label }}</router-link
+          >{{ label }}</RouterLink
         >
         <a
           v-if="typeof location === 'function'"

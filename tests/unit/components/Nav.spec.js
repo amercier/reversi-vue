@@ -7,11 +7,11 @@ describe('Nav.vue', () => {
   };
 
   it('renders without crashing', () => {
-    shallowMount(Nav, { propsData, stubs: ['router-link'] });
+    shallowMount(Nav, { propsData, stubs: ['RouterLink'] });
   });
 
   it('renders its components', () => {
-    const nav = shallowMount(Nav, { propsData, stubs: ['router-link'] });
+    const nav = shallowMount(Nav, { propsData, stubs: ['RouterLink'] });
     expect(nav.element).toMatchSnapshot();
   });
 });
