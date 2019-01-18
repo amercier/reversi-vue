@@ -56,8 +56,8 @@ export default {
      *     position(0, 7); // "A8"
      *     position(7, 7); // "H8"
      *
-     * @param {number} row Row index.
-     * @param {number} col Column index.
+     * @param {number} row - Row index.
+     * @param {number} col - Column index.
      * @returns {string} A string representation of the position.
      */
     position(row, col) {

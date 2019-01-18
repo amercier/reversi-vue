@@ -1,3 +1,5 @@
+/* eslint-disable valid-jsdoc, jsdoc/require-example, jsdoc/require-param */
+
 const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 const WebpackFixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 const constants = require('./src/config');

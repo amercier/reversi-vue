@@ -21,6 +21,10 @@ export default {
   methods: {
     /**
      * Function called whenever the user press Restart.
+     *
+     * @example
+     *  <a v-on:click.prevent="handleRestart">Restart</a>
+     * @returns {undefined} Nothing.
      */
     handleRestart() {
       if (
