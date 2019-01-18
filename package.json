@@ -199,7 +199,7 @@
     "testURL": "http://localhost/",
     "collectCoverageFrom": [
       "src/**/*.{js,vue}",
-      "!src/registerServiceWorker.js"
+      "!src/register-service-worker.js"
     ]
   }
 }
