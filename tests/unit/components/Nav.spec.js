@@ -7,7 +7,9 @@ describe('Nav.vue', () => {
   };
 
   it('renders without crashing', () => {
-    shallowMount(Nav, { propsData, stubs: ['RouterLink'] });
+    expect(() =>
+      shallowMount(Nav, { propsData, stubs: ['RouterLink'] }),
+    ).not.toThrow();
   });
 
   it('renders its components', () => {

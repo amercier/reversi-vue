@@ -1,23 +1,19 @@
 import Vuex from 'vuex';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Game from '@/views/Game.vue';
-import { createStore } from '@/store';
+import { createStore } from '@/store'; // TODO Mock
 
 const localVue = createLocalVue();
 localVue.use(Vuex);
 
 describe('Game.vue', () => {
-  let store;
-
-  beforeEach(() => {
-    store = createStore(); // TODO Mock
-  });
-
   it('renders without crashing', () => {
-    shallowMount(Game, { store, localVue });
+    const store = createStore();
+    expect(() => shallowMount(Game, { store, localVue })).not.toThrow();
   });
 
   it('renders its components', () => {
+    const store = createStore();
     const game = shallowMount(Game, { store, localVue });
     expect(game.element).toMatchSnapshot();
   });

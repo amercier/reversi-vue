@@ -3,7 +3,7 @@ import About from '@/views/About.vue';
 
 describe('About.vue', () => {
   it('renders without crashing', () => {
-    shallowMount(About);
+    expect(() => shallowMount(About)).not.toThrow();
   });
 
   it('renders its components', () => {
