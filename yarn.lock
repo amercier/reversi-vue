@@ -3384,9 +3384,9 @@ eslint-plugin-vue@^4.7.1:
   dependencies:
     vue-eslint-parser "^2.0.3"
 
-eslint-plugin-vue@^5.0.0:
+eslint-plugin-vue@vuejs/eslint-plugin-vue:
   version "5.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-5.1.0.tgz#d0d373334be8140d698ec4e1fb83f09faa48081b"
+  resolved "https://codeload.github.com/vuejs/eslint-plugin-vue/tar.gz/9c49dcc8ff792ec6798037bd6b7f4ac3d26fdf68"
   dependencies:
     vue-eslint-parser "^4.0.2"
 
