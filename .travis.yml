@@ -8,6 +8,7 @@ script:
   - yarn e2e
 after_success:
   - yarn build # Prevent before_deploy not being tested in PRs
+  - yarn lighthouse
   - codecov
 before_deploy:
   - echo "$CNAME" > dist/CNAME

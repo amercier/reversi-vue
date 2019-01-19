@@ -9,7 +9,10 @@
     "lint:prettier": "if-ci run-s 'prettier --list-different' && if-not-ci run-s 'prettier --write'",
     "prettier": "prettier --ignore-path .gitignore '**/*.{html,json,md,s?css,ya?ml}'",
     "test": "if-ci vue-cli-service test:unit --colors --coverage && if-not-ci vue-cli-service test:unit --watch --notify",
-    "e2e": "if-ci vue-cli-service test:e2e --headless --config video=false && if-not-ci vue-cli-service test:e2e"
+    "e2e": "if-ci vue-cli-service test:e2e --headless --config video=false && if-not-ci vue-cli-service test:e2e",
+    "lighthouse": "cross-env URL=$(cd dist && ../node_modules/.bin/now -n reversi-vue-staging -t $NOW_TOKEN) run-p -c \"lighthouse:run $URL\" \"lighthouse:clean $(echo $URL | sed 's/^https:\\/\\///')\"",
+    "lighthouse:run": "lighthouse-ci",
+    "lighthouse:clean": "now rm -y -t $NOW_TOKEN"
   },
   "dependencies": {
     "register-service-worker": "^1.5.2",
@@ -47,8 +50,10 @@
     "husky": "^1.3.1",
     "if-ci": "^3.0.0",
     "jest-extended": "^0.11.0",
+    "lighthouse-ci": "ebidel/lighthouse-ci",
     "lint-staged": "^8.1.0",
     "node-sass": "^4.9.0",
+    "now": "^13.1.2",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.15.3",
     "sass-loader": "^7.0.1",
