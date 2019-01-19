@@ -10,7 +10,7 @@
     "prettier": "prettier --ignore-path .gitignore '**/*.{html,json,md,s?css,ya?ml}'",
     "test": "if-ci vue-cli-service test:unit --colors --coverage && if-not-ci vue-cli-service test:unit --watch --notify",
     "e2e": "if-ci vue-cli-service test:e2e --headless --config video=false && if-not-ci vue-cli-service test:e2e",
-    "lighthouse": "export URL=$(cd dist && ../node_modules/.bin/now -n reversi-vue-staging -t $NOW_TOKEN) && run-s -c \"lighthouse:run $URL\" \"lighthouse:clean $(echo $URL | sed 's/^https:\\/\\///')\"",
+    "lighthouse": "export URL=$(cd dist && ../node_modules/.bin/now -n reversi-vue-lighthouse -t $NOW_TOKEN) && run-s -c \"lighthouse:run $URL\" \"lighthouse:clean $(echo $URL | sed 's/^https:\\/\\///')\"",
     "lighthouse:run": "lighthouse-ci --no-comment --perf=96 --pwa=100 --a11y=100 --bp=100 --seo=100",
     "lighthouse:clean": "now rm -y -t $NOW_TOKEN"
   },
