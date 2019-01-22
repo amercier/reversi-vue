@@ -39,6 +39,8 @@ Each commit is automatically tested on [Travis CI], which runs:
 - **Unit tests** using [Jest] with code coverage reported to [Codecov],
 - **End-to-end tests** using [Cypress].
 
+Pull Request previews are provided by [Netlify].
+
 ## Continuous Delivery
 
 Each successful build on the `master` branch is automatically deployed by Travis CI on
@@ -66,6 +68,7 @@ Thank you so much for your hard work!
 [jest]: http://jestjs.io/
 [codecov]: https://codecov.io
 [cypress]: https://www.cypress.io/
+[netlify]: https://app.netlify.com/
 [eslint]: https://eslint.org/
 [prettier]: https://prettier.io/
 [github pages]: https://pages.github.com/
