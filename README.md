@@ -44,10 +44,9 @@ Pull Request previews are provided by [Netlify].
 ## Continuous Delivery
 
 Each successful build on the `master` branch is automatically deployed by Travis CI on
-[Netlify] (auto publishing is disabled).
+`deploy` branch first. Then, [Netlify] automatically deploys the new code from `deploy`.
 
-> **Note:** `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` environment variables must be set in Travis
-> CI project.
+> **Note:** `GITHUB_TOKEN` environment variable must be set in Travis CI project.
 
 ## License
 
