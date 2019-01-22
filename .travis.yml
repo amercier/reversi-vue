@@ -1,5 +1,5 @@
 language: node_js
-node_js: --lts # LTS
+node_js: 8
 cache: yarn
 before_script:
   - yarn lint

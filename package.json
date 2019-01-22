@@ -1,6 +1,9 @@
 {
   "name": "reversi-vue",
   "private": true,
+  "engines": {
+    "node": "8.x"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
