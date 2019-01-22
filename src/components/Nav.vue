@@ -8,13 +8,17 @@
       >
         <RouterLink
           v-if="typeof location === 'string'"
-          :class="`nav-link ${disabled ? 'nav-link--disabled' : ''}`"
+          :class="
+            `${linkClass} nav-link ${disabled ? 'nav-link--disabled' : ''}`
+          "
           :to="location"
           >{{ label }}</RouterLink
         >
         <a
           v-if="typeof location === 'function'"
-          :class="`nav-link ${disabled ? 'nav-link--disabled' : ''}`"
+          :class="
+            `${linkClass} nav-link ${disabled ? 'nav-link--disabled' : ''}`
+          "
           href="#"
           @click.prevent="disabled || location()"
           >{{ label }}</a
@@ -40,6 +44,16 @@ export default {
       type: Array,
       required: true,
     },
+
+    /**
+     * Class for links.
+     *
+     * @type {String}
+     */
+    linkClass: {
+      type: String,
+      default: '',
+    },
   },
 };
 </script>
@@ -47,7 +61,6 @@ export default {
 <style lang="scss">
 .nav {
   text-align: center;
-  height: 100%;
 
   &-list {
     list-style: none;

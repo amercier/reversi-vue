@@ -11,7 +11,7 @@ exports[`Nav.vue renders its components 1`] = `
       class="nav-item"
     >
       <routerlink-stub
-        class="nav-link "
+        class=" nav-link "
         to="/a"
       >
         Link 1
@@ -23,7 +23,7 @@ exports[`Nav.vue renders its components 1`] = `
       class="nav-item"
     >
       <routerlink-stub
-        class="nav-link "
+        class=" nav-link "
         to="/b"
       >
         Link 2
@@ -37,7 +37,7 @@ exports[`Nav.vue renders its components 1`] = `
       <!---->
        
       <a
-        class="nav-link "
+        class=" nav-link "
         href="#"
       >
         Link 3

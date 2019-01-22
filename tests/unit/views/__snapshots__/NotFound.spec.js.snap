@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound.vue renders its components 1`] = `
+<main
+  class="not-found"
+>
+  <h1
+    class="not-found-title"
+  >
+    Oooooops!
+  </h1>
+   
+  <h2
+    class="not-found-subtitle"
+  >
+    404
+  </h2>
+   
+  <p
+    class="not-found-paragraph"
+  >
+    
+    The link is broken or the page has been moved. Try these pages instead:
+  
+  </p>
+   
+  <nav-stub
+    class="not-found-paragraph"
+    linkclass="not-found-link"
+    links="/,Game,/about,About"
+  />
+</main>
+`;

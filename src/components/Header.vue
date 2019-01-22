@@ -1,10 +1,12 @@
 <template>
   <header class="header">
     <Nav
+      class="header-nav"
       :links="[
         ['/', 'Game'],
         [handleRestart, 'Restart', $store.getters.isAtStart],
         ['/about', 'About'],
+        ['/test', 'Test'],
       ]"
     />
   </header>
@@ -47,6 +49,10 @@ export default {
   box-shadow: 0 0 2rem 0.5rem #000;
   height: $HEADER_HEIGHT;
   z-index: 1;
+
+  &-nav {
+    height: 100%;
+  }
 }
 
 // High-DPI devices
