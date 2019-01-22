@@ -44,9 +44,10 @@ Pull Request previews are provided by [Netlify].
 ## Continuous Delivery
 
 Each successful build on the `master` branch is automatically deployed by Travis CI on
-[GitHub Pages]. See [GitHub Pages Deployment] for more information.
+[Netlify] (auto publishing is disabled).
 
-> **Note:** `GITHUB_TOKEN` and `CNAME` environment variables must be set in Travis CI project.
+> **Note:** `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` environment variables must be set in Travis
+> CI project.
 
 ## License
 
@@ -71,8 +72,6 @@ Thank you so much for your hard work!
 [netlify]: https://app.netlify.com/
 [eslint]: https://eslint.org/
 [prettier]: https://prettier.io/
-[github pages]: https://pages.github.com/
-[github pages deployment]: https://docs.travis-ci.com/user/deployment/pages/
 [travis ci]: https://travis-ci.org
 [siberiacrab]: https://www.deviantart.com/siberiancrab
 [png tree]: https://fr.pngtree.com/
