@@ -913,6 +913,62 @@
     webpack-merge "^4.1.5"
     yorkie "^2.0.0"
 
+"@vue/cli-service@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-3.3.1.tgz#b93d4f83e5f343574c0121b6d05df04409b6893b"
+  integrity sha512-fo8Mt4pi6GBxRywPxM3uPRAIW/SltauYPw9RHA44rHWpq2adb4B8REtkqBGXTrtQPw9zsdiqHr0djkVO/yv9BA==
+  dependencies:
+    "@intervolga/optimize-cssnano-plugin" "^1.0.5"
+    "@vue/cli-overlay" "^3.3.0"
+    "@vue/cli-shared-utils" "^3.3.0"
+    "@vue/preload-webpack-plugin" "^1.1.0"
+    "@vue/web-component-wrapper" "^1.2.0"
+    acorn "^6.0.4"
+    acorn-walk "^6.1.1"
+    address "^1.0.3"
+    autoprefixer "^8.6.5"
+    cache-loader "^1.2.5"
+    case-sensitive-paths-webpack-plugin "^2.1.2"
+    chalk "^2.4.1"
+    clipboardy "^1.2.3"
+    cliui "^4.1.0"
+    copy-webpack-plugin "^4.6.0"
+    css-loader "^1.0.1"
+    cssnano "^4.1.8"
+    debug "^4.1.1"
+    escape-string-regexp "^1.0.5"
+    file-loader "^2.0.0"
+    friendly-errors-webpack-plugin "^1.7.0"
+    fs-extra "^7.0.1"
+    globby "^8.0.1"
+    hash-sum "^1.0.2"
+    html-webpack-plugin "^3.2.0"
+    launch-editor-middleware "^2.2.1"
+    lodash.defaultsdeep "^4.6.0"
+    lodash.mapvalues "^4.6.0"
+    lodash.transform "^4.6.0"
+    mini-css-extract-plugin "^0.5.0"
+    minimist "^1.2.0"
+    ora "^3.0.0"
+    portfinder "^1.0.20"
+    postcss-loader "^3.0.0"
+    read-pkg "^4.0.1"
+    semver "^5.6.0"
+    slash "^2.0.0"
+    source-map-url "^0.4.0"
+    ssri "^6.0.1"
+    string.prototype.padend "^3.0.0"
+    terser-webpack-plugin "^1.2.1"
+    thread-loader "^1.2.0"
+    url-loader "^1.1.2"
+    vue-loader "^15.4.2"
+    webpack ">=4 < 4.29"
+    webpack-bundle-analyzer "^3.0.3"
+    webpack-chain "^4.11.0"
+    webpack-dev-server "^3.1.14"
+    webpack-merge "^4.1.5"
+    yorkie "^2.0.0"
+
 "@vue/cli-shared-utils@^3.3.0":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-3.3.0.tgz#aba6c435bf9affb8180c43195ee85eb8d736d70f"
@@ -3313,6 +3369,24 @@ eslint-config-airbnb-base@^13.1.0:
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
+eslint-config-amercier@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-amercier/-/eslint-config-amercier-0.1.0.tgz#47d17695f3122802ee12f3e69b1675afe3fda1ff"
+  integrity sha512-w1VH75cw2o2qDAeJeTDXsIi2nMXnXOpQtdiwfv2pwLRhCBmBAXckTBZUaGTJ07XJBJDjlpCeub3W6QWxC9OhBg==
+  dependencies:
+    "@vue/cli-service" "^3.3.1"
+    "@vue/eslint-config-airbnb" "^4.0.0"
+    "@vue/eslint-config-prettier" "^4.0.1"
+    babel-eslint "^10.0.1"
+    eslint-config-jsdoc-strict "^2.0.0"
+    eslint-plugin-eslint-comments "^3.0.1"
+    eslint-plugin-jest "^22.1.3"
+    eslint-plugin-jsdoc "^4.0.1"
+    eslint-plugin-more "^0.3.2"
+    eslint-plugin-strict-vue "^1.0.0"
+    eslint-plugin-unicorn "^7.1.0"
+    eslint-plugin-vue vuejs/eslint-plugin-vue
+
 eslint-config-jsdoc-strict@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/eslint-config-jsdoc-strict/-/eslint-config-jsdoc-strict-2.0.0.tgz#e2a914178d0e3ff4d9843915afcd173904f6c417"
@@ -3394,9 +3468,10 @@ eslint-plugin-jest@^22.1.3:
   version "22.1.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-22.1.3.tgz#4444108dfcddc5d2117ed6dc551f529d7e73a99e"
 
-eslint-plugin-jsdoc@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-4.0.0.tgz#c791b37597db349e4879f82b7a2625d3eb85f2df"
+eslint-plugin-jsdoc@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-4.0.1.tgz#6f5e3a96e78bceec98a469718b8446c6d229aa52"
+  integrity sha512-aQ7UeIGmaXGWJhYz1S81Pg5A+P6P+c1ebdV9BfG+RdVlx8WB6HVVKhdnIfvHVmD9vjsma89OjOzVSBNxJQ5x8g==
   dependencies:
     comment-parser "^0.5.1"
     jsdoctypeparser "^2.0.0-alpha-8"
@@ -3419,9 +3494,10 @@ eslint-plugin-strict-vue@^1.0.0:
     ramda "^0.25.0"
     requireindex "~1.1.0"
 
-eslint-plugin-unicorn@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-7.0.0.tgz#b03ade717684d620392bf5458a51758e8e77ea47"
+eslint-plugin-unicorn@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-7.1.0.tgz#9efef5c68fde0ebefb0241fbcfa274f1b959c04e"
+  integrity sha512-lW/ZwGR638V0XuZgR160qVQvPtw8tw3laKT5LjJPt+W+tN7kVf2S2V7x+ZrEEwSjEb3OiEzb3cppzaKuYtgYeg==
   dependencies:
     clean-regexp "^1.0.0"
     eslint-ast-utils "^1.0.0"
@@ -3438,7 +3514,7 @@ eslint-plugin-vue@^4.7.1:
   dependencies:
     vue-eslint-parser "^2.0.3"
 
-eslint-plugin-vue@vuejs/eslint-plugin-vue:
+"eslint-plugin-vue@github:vuejs/eslint-plugin-vue":
   version "5.1.0"
   resolved "https://codeload.github.com/vuejs/eslint-plugin-vue/tar.gz/9c49dcc8ff792ec6798037bd6b7f4ac3d26fdf68"
   dependencies:
@@ -9825,6 +9901,36 @@ webpack-sources@^1.1.0, webpack-sources@^1.3.0:
 webpack@4:
   version "4.28.1"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.28.1.tgz#d0e2856e75d1224b170bf16c30b6ca9b75f0d958"
+  dependencies:
+    "@webassemblyjs/ast" "1.7.11"
+    "@webassemblyjs/helper-module-context" "1.7.11"
+    "@webassemblyjs/wasm-edit" "1.7.11"
+    "@webassemblyjs/wasm-parser" "1.7.11"
+    acorn "^5.6.2"
+    acorn-dynamic-import "^3.0.0"
+    ajv "^6.1.0"
+    ajv-keywords "^3.1.0"
+    chrome-trace-event "^1.0.0"
+    enhanced-resolve "^4.1.0"
+    eslint-scope "^4.0.0"
+    json-parse-better-errors "^1.0.2"
+    loader-runner "^2.3.0"
+    loader-utils "^1.1.0"
+    memory-fs "~0.4.1"
+    micromatch "^3.1.8"
+    mkdirp "~0.5.0"
+    neo-async "^2.5.0"
+    node-libs-browser "^2.0.0"
+    schema-utils "^0.4.4"
+    tapable "^1.1.0"
+    terser-webpack-plugin "^1.1.0"
+    watchpack "^1.5.0"
+    webpack-sources "^1.3.0"
+
+"webpack@>=4 < 4.29":
+  version "4.28.4"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.28.4.tgz#1ddae6c89887d7efb752adf0c3cd32b9b07eacd0"
+  integrity sha512-NxjD61WsK/a3JIdwWjtIpimmvE6UrRi3yG54/74Hk9rwNj5FPkA4DJCf1z4ByDWLkvZhTZE+P3C/eh6UD5lDcw==
   dependencies:
     "@webassemblyjs/ast" "1.7.11"
     "@webassemblyjs/helper-module-context" "1.7.11"
