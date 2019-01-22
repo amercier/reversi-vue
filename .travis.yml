@@ -11,12 +11,10 @@ after_success:
   - test "$TRAVIS_PULL_REQUEST" = false || yarn lighthouse # Run Lighthouse on PR only
   - codecov
 before_deploy:
-  - echo "$CNAME" > dist/CNAME
+  - yarn global add netlify-cli
 deploy:
-  provider: pages
-  github-token: $GITHUB_TOKEN
-  local-dir: dist
+  provider: script
+  script: npx netlify deploy --prod # NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID must be set
   skip_cleanup: true
-  keep-history: true
   on:
     branch: master
