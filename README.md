@@ -44,7 +44,7 @@ Pull Request previews are provided by [Netlify].
 ## Continuous Delivery
 
 Each successful build on the `master` branch is automatically deployed by Travis CI on
-`gh-pages` branch first. Then, [Netlify] automatically deploys the new code from `gh-pages`.
+`deploy` branch first. Then, [Netlify] automatically deploys the new code from `deploy`.
 
 > **Note:** `GITHUB_TOKEN` environment variable must be set in Travis CI project.
 

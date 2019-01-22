@@ -16,5 +16,6 @@ deploy:
   local-dir: dist
   skip_cleanup: true
   keep-history: true
+  target-branch: deploy
   on:
     branch: master
