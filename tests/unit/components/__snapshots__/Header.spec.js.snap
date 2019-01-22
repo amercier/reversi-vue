@@ -7,7 +7,7 @@ exports[`Header.vue when links are passed renders its components 1`] = `
   <nav-stub
     class="header-nav"
     linkclass=""
-    links="/,Game,function () { [native code] },Restart,true,/about,About,/test,Test"
+    links="/,Game,function () { [native code] },Restart,true,/about,About"
   />
 </header>
 `;

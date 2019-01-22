@@ -6,7 +6,6 @@
         ['/', 'Game'],
         [handleRestart, 'Restart', $store.getters.isAtStart],
         ['/about', 'About'],
-        ['/test', 'Test'],
       ]"
     />
   </header>
