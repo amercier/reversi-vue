@@ -48,6 +48,10 @@ Each successful build on the `master` branch is automatically deployed by Travis
 
 > **Note:** `GITHUB_TOKEN` environment variable must be set in Travis CI project.
 
+### Custom deployment
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/amercier/reversi-vue&command=yarn%20build&dir=dist)
+
 ## License
 
 [![License](https://img.shields.io/github/license/amercier/reversi-vue.svg)](LICENSE.md)

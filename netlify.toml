@@ -1,0 +1,4 @@
+# Netlify settings for "Deploy to Netlify" button.
+[build]
+  command = "yarn build"
+  publish = "dist"
