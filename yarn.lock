@@ -913,62 +913,6 @@
     webpack-merge "^4.1.5"
     yorkie "^2.0.0"
 
-"@vue/cli-service@^3.3.1":
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-3.3.1.tgz#b93d4f83e5f343574c0121b6d05df04409b6893b"
-  integrity sha512-fo8Mt4pi6GBxRywPxM3uPRAIW/SltauYPw9RHA44rHWpq2adb4B8REtkqBGXTrtQPw9zsdiqHr0djkVO/yv9BA==
-  dependencies:
-    "@intervolga/optimize-cssnano-plugin" "^1.0.5"
-    "@vue/cli-overlay" "^3.3.0"
-    "@vue/cli-shared-utils" "^3.3.0"
-    "@vue/preload-webpack-plugin" "^1.1.0"
-    "@vue/web-component-wrapper" "^1.2.0"
-    acorn "^6.0.4"
-    acorn-walk "^6.1.1"
-    address "^1.0.3"
-    autoprefixer "^8.6.5"
-    cache-loader "^1.2.5"
-    case-sensitive-paths-webpack-plugin "^2.1.2"
-    chalk "^2.4.1"
-    clipboardy "^1.2.3"
-    cliui "^4.1.0"
-    copy-webpack-plugin "^4.6.0"
-    css-loader "^1.0.1"
-    cssnano "^4.1.8"
-    debug "^4.1.1"
-    escape-string-regexp "^1.0.5"
-    file-loader "^2.0.0"
-    friendly-errors-webpack-plugin "^1.7.0"
-    fs-extra "^7.0.1"
-    globby "^8.0.1"
-    hash-sum "^1.0.2"
-    html-webpack-plugin "^3.2.0"
-    launch-editor-middleware "^2.2.1"
-    lodash.defaultsdeep "^4.6.0"
-    lodash.mapvalues "^4.6.0"
-    lodash.transform "^4.6.0"
-    mini-css-extract-plugin "^0.5.0"
-    minimist "^1.2.0"
-    ora "^3.0.0"
-    portfinder "^1.0.20"
-    postcss-loader "^3.0.0"
-    read-pkg "^4.0.1"
-    semver "^5.6.0"
-    slash "^2.0.0"
-    source-map-url "^0.4.0"
-    ssri "^6.0.1"
-    string.prototype.padend "^3.0.0"
-    terser-webpack-plugin "^1.2.1"
-    thread-loader "^1.2.0"
-    url-loader "^1.1.2"
-    vue-loader "^15.4.2"
-    webpack ">=4 < 4.29"
-    webpack-bundle-analyzer "^3.0.3"
-    webpack-chain "^4.11.0"
-    webpack-dev-server "^3.1.14"
-    webpack-merge "^4.1.5"
-    yorkie "^2.0.0"
-
 "@vue/cli-shared-utils@^3.3.0":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-3.3.0.tgz#aba6c435bf9affb8180c43195ee85eb8d736d70f"
@@ -3416,19 +3360,18 @@ eslint-config-airbnb@^17.1.0:
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
-eslint-config-amercier@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-amercier/-/eslint-config-amercier-0.2.0.tgz#2b234f9403f22e086255e34b28d60174d0970ed9"
-  integrity sha512-gAofDN/FzDaRFiwgIkHSeGWYYTBA3bqURaHhTXGHC2qn3Ss1fb5wZettMEtyBQ5hY7RP/lALt/7Jqr74fA27NA==
+eslint-config-amercier@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-amercier/-/eslint-config-amercier-0.3.0.tgz#71ffa8b656647ad37d2e16655a337adc93242e9d"
+  integrity sha512-ZZ5sjTQLYRgodBVe8yJqUM4Kcmkp/LEZr+Ba7IRs1XLv7EFkLfzrRgGrtQbUVeBsMCkG323sNYUz27apJOCraA==
   dependencies:
-    "@vue/cli-service" "^3.3.1"
     "@vue/eslint-config-airbnb" "^4.0.0"
     "@vue/eslint-config-prettier" "^4.0.1"
     babel-eslint "^10.0.1"
     eslint-config-airbnb "^17.1.0"
     eslint-config-flowtype-strict "^0.2.0"
     eslint-config-jsdoc-strict "^2.0.0"
-    eslint-config-prettier "^3.6.0"
+    eslint-config-prettier "^4.0.0"
     eslint-plugin-eslint-comments "^3.0.1"
     eslint-plugin-flowtype "^3.2.1"
     eslint-plugin-import "^2.14.0"
@@ -3439,7 +3382,7 @@ eslint-config-amercier@^0.2.0:
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
     eslint-plugin-react-redux "^3.0.0"
-    eslint-plugin-redux-saga "^0.10.0"
+    eslint-plugin-redux-saga "^1.0.0"
     eslint-plugin-strict-vue "^1.0.0"
     eslint-plugin-unicorn "^7.1.0"
     eslint-plugin-vue vuejs/eslint-plugin-vue
@@ -3459,10 +3402,10 @@ eslint-config-prettier@^3.3.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-config-prettier@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-3.6.0.tgz#8ca3ffac4bd6eeef623a0651f9d754900e3ec217"
-  integrity sha512-ixJ4U3uTLXwJts4rmSVW/lMXjlGwCijhBJHk8iVqKKSifeI0qgFEfWl8L63isfc8Od7EiBALF6BX3jKLluf/jQ==
+eslint-config-prettier@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-4.0.0.tgz#16cedeea0a56e74de60dcbbe3be0ab2c645405b9"
+  integrity sha512-kWuiJxzV5NwOwZcpyozTzDT5KJhBw292bbYro9Is7BWnbNMg15Gmpluc1CTetiCatF8DRkNvgPAOaSyg+bYr3g==
   dependencies:
     get-stdin "^6.0.0"
 
@@ -3598,10 +3541,10 @@ eslint-plugin-react@^7.11.1, eslint-plugin-react@^7.12.4:
     prop-types "^15.6.2"
     resolve "^1.9.0"
 
-eslint-plugin-redux-saga@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-redux-saga/-/eslint-plugin-redux-saga-0.10.0.tgz#62001c4e235b4607c9d7ac3dc087f9c5b173c91d"
-  integrity sha512-Di6E5VCFN4sTmhHjAWoClGwBDAtGp+VcFXve0IQxb5yodhpt9BzkIDB6+Ul4aVu0IzspnHuZOuQ4uY5peqbBwg==
+eslint-plugin-redux-saga@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-redux-saga/-/eslint-plugin-redux-saga-1.0.0.tgz#2b5d21d4c0de57a2b4c724668ea4f22ec280c91f"
+  integrity sha512-l502FJzxvSTVwhKfZ+2t2DMS7iW6o9ErlZLDpSH28UFbxuQsh5/g8vik8aT0EGSCOhMfiRzF8t0nnRb85XlMpA==
 
 eslint-plugin-strict-vue@^1.0.0:
   version "1.0.0"
@@ -10054,36 +9997,6 @@ webpack-sources@^1.1.0, webpack-sources@^1.3.0:
 webpack@4:
   version "4.28.1"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.28.1.tgz#d0e2856e75d1224b170bf16c30b6ca9b75f0d958"
-  dependencies:
-    "@webassemblyjs/ast" "1.7.11"
-    "@webassemblyjs/helper-module-context" "1.7.11"
-    "@webassemblyjs/wasm-edit" "1.7.11"
-    "@webassemblyjs/wasm-parser" "1.7.11"
-    acorn "^5.6.2"
-    acorn-dynamic-import "^3.0.0"
-    ajv "^6.1.0"
-    ajv-keywords "^3.1.0"
-    chrome-trace-event "^1.0.0"
-    enhanced-resolve "^4.1.0"
-    eslint-scope "^4.0.0"
-    json-parse-better-errors "^1.0.2"
-    loader-runner "^2.3.0"
-    loader-utils "^1.1.0"
-    memory-fs "~0.4.1"
-    micromatch "^3.1.8"
-    mkdirp "~0.5.0"
-    neo-async "^2.5.0"
-    node-libs-browser "^2.0.0"
-    schema-utils "^0.4.4"
-    tapable "^1.1.0"
-    terser-webpack-plugin "^1.1.0"
-    watchpack "^1.5.0"
-    webpack-sources "^1.3.0"
-
-"webpack@>=4 < 4.29":
-  version "4.28.4"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.28.4.tgz#1ddae6c89887d7efb752adf0c3cd32b9b07eacd0"
-  integrity sha512-NxjD61WsK/a3JIdwWjtIpimmvE6UrRi3yG54/74Hk9rwNj5FPkA4DJCf1z4ByDWLkvZhTZE+P3C/eh6UD5lDcw==
   dependencies:
     "@webassemblyjs/ast" "1.7.11"
     "@webassemblyjs/helper-module-context" "1.7.11"
