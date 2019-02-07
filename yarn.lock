@@ -3573,11 +3573,11 @@ eslint-plugin-vue@^4.7.1:
   dependencies:
     vue-eslint-parser "^2.0.3"
 
-"eslint-plugin-vue@github:vuejs/eslint-plugin-vue":
+eslint-plugin-vue@vuejs/eslint-plugin-vue:
   version "5.1.0"
-  resolved "https://codeload.github.com/vuejs/eslint-plugin-vue/tar.gz/9c49dcc8ff792ec6798037bd6b7f4ac3d26fdf68"
+  resolved "https://codeload.github.com/vuejs/eslint-plugin-vue/tar.gz/f46c75b391422a651711fe67aac60963faf39406"
   dependencies:
-    vue-eslint-parser "^4.0.2"
+    vue-eslint-parser "^5.0.0"
 
 eslint-restricted-globals@^0.1.1:
   version "0.1.1"
@@ -9789,9 +9789,10 @@ vue-eslint-parser@^2.0.3:
     esquery "^1.0.0"
     lodash "^4.17.4"
 
-vue-eslint-parser@^4.0.2:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-4.0.3.tgz#80cf162e484387b2640371ad21ba1f86e0c10a61"
+vue-eslint-parser@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-5.0.0.tgz#00f4e4da94ec974b821a26ff0ed0f7a78402b8a1"
+  integrity sha512-JlHVZwBBTNVvzmifwjpZYn0oPWH2SgWv5dojlZBsrhablDu95VFD+hriB1rQGwbD+bms6g+rAFhQHk6+NyiS6g==
   dependencies:
     debug "^4.1.0"
     eslint-scope "^4.0.0"
@@ -9970,9 +9971,10 @@ webpack-dev-server@^3.1.14:
     webpack-log "^2.0.0"
     yargs "12.0.2"
 
-webpack-fix-style-only-entries@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/webpack-fix-style-only-entries/-/webpack-fix-style-only-entries-0.1.0.tgz#2a5cc81610bb9843ba2da350daa9bf9df2d2d3b4"
+webpack-fix-style-only-entries@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/webpack-fix-style-only-entries/-/webpack-fix-style-only-entries-0.2.0.tgz#87b11a0eee21c2fe6191a50d478d69eb70815957"
+  integrity sha512-3EKneRqg1NI5iQro9tFq3W0hYNu7iH2ZvTB7CbTQMUymsouZZd1elsDIYh8KUqCQj7O+/QySepHM80FcWi4O0Q==
 
 webpack-log@^2.0.0:
   version "2.0.0"
