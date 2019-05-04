@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.3aad80fc032f478380103fd0f54411ff.js"
+  "/precache-manifest.e7c9210767daeb97ca254cb2036542e9.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "reversi-vue"});
