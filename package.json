@@ -19,7 +19,7 @@
     "register-service-worker": "^1.5.2",
     "reversi": "^3.0.0",
     "vue": "^2.5.21",
-    "vue-router": "^3.0.1",
+    "vue-router": "3.0.7",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
